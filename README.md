@@ -18,3 +18,14 @@ Shared space for the Python{4}Lib group
 
 ### Articles
 + [Fuzzy Matching at Scale / Josh Taylor](https://towardsdatascience.com/fuzzy-matching-at-scale-84f2bfd0c536)
+
+### Tools
+#### PyInstaller (packaging)
++ [PyInstaller documentation](https://pyinstaller.org/en/stable/index.html)
++ [Easy Steps to Create an Executable in Python Using Pyinstaller / Renu Khandelwal](https://medium.com/swlh/easy-steps-to-create-an-executable-in-python-using-pyinstaller-cc48393bcc64)
++ [Using PyInstaller to Easily Distribute Python Applications / Luke Lee](https://realpython.com/pyinstaller-python/)
+
+#### Briefcase (packaging)
++ [Briefcase documentation](https://briefcase.readthedocs.io/en/latest/)
++ [PyCon 2020 'Snakes In a Case' talk by Russell Keith-Magee](https://us.pycon.org/2020/schedule/presentation/126/)
++ [Qt for Python & Briefcase](https://doc.qt.io/qtforpython/deployment-briefcase.html)
