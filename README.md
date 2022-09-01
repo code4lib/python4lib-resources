@@ -6,8 +6,12 @@ Shared space for the Python{4}Lib group
 
 
 ## Python Resources
+### Reference
++ [Python Cheatsheet](https://www.pythoncheatsheet.org/)
+
 ### Books
-+ [Effective Python: 59 Ways to Write Better Python / Brett Slatkin](http://www.worldcat.org/oclc/1140129622)
++ [Automate the Boring Stuff with Python : practical programming for total beginners / Al Sweigart](https://worldcat.org/title/1128094127)
++ [Effective Python: 59 Ways to Write Better Python / Brett Slatkin](https://www.worldcat.org/title/1140129622)
 
 ### Tutorials
 + [Official Python Tutorial](https://docs.python.org/3/tutorial/index.html)
