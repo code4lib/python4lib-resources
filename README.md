@@ -23,6 +23,10 @@ Shared space for the Python{4}Lib group
 ### Articles
 + [Fuzzy Matching at Scale / Josh Taylor](https://towardsdatascience.com/fuzzy-matching-at-scale-84f2bfd0c536)
 
+### Podcasts
++ [Python Bytes](https://pythonbytes.fm/) weekly Python news podcast hosted by Michael Kennedy and Brian Okken
++ [Test & Code](https://testandcode.com/) hosted by Brian Okken, focused on automated testing in Python
+
 ## Tools
 
 ### Briefcase (packaging)
