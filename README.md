@@ -27,6 +27,9 @@ Shared space for the Python{4}Lib group
 + [Python Bytes](https://pythonbytes.fm/) weekly Python news podcast hosted by Michael Kennedy and Brian Okken
 + [Test & Code](https://testandcode.com/) hosted by Brian Okken, focused on automated testing in Python
 
+### Presentations
++ [Finding a path forward: The use of Python to support technical services work in academic libraries](https://docs.google.com/presentation/d/1598qxRIB08_kLaJov_CsKWHw5VctFY0MIZhohQUG6ww/edit#slide=id.p1) Talk given at Python{4}Lib 9/20/22 by Maria Collins and Xiaoyan Song based on their presentation at ER&L 2022
+
 ## Tools
 
 ### Briefcase (packaging)
