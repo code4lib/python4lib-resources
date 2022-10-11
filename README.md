@@ -26,6 +26,10 @@ Shared space for the Python{4}Lib group
 ### Podcasts
 + [Python Bytes](https://pythonbytes.fm/) weekly Python news podcast hosted by Michael Kennedy and Brian Okken
 + [Test & Code](https://testandcode.com/) hosted by Brian Okken, focused on automated testing in Python
++ [Talk Python To Me](https://talkpython.fm/) hosted by Michael Kennedy
+
+### Blogs
++ [Practical Business Python](https://pbpython.com/) / data science centric
 
 ### Presentations
 + [Finding a path forward: The use of Python to support technical services work in academic libraries](https://docs.google.com/presentation/d/1598qxRIB08_kLaJov_CsKWHw5VctFY0MIZhohQUG6ww/edit#slide=id.p1) Talk given at Python{4}Lib 9/20/22 by Maria Collins and Xiaoyan Song based on their presentation at ER&L 2022
@@ -41,3 +45,9 @@ Shared space for the Python{4}Lib group
 + [PyInstaller documentation](https://pyinstaller.org/en/stable/index.html)
 + [Easy Steps to Create an Executable in Python Using Pyinstaller / Renu Khandelwal](https://medium.com/swlh/easy-steps-to-create-an-executable-in-python-using-pyinstaller-cc48393bcc64)
 + [Using PyInstaller to Easily Distribute Python Applications / Luke Lee](https://realpython.com/pyinstaller-python/)
+
+### GUI
++ [VisualTK](https://visualtk.com/) / (great starting point to visually create a GUI in Tkinter)
+
+### Visualization
++ [Python Data Visualization: Where to Start? : Interview with Chris Moffitt / Talk Python To Me: episode # 384](https://talkpython.fm/episodes/transcript/384/python-data-visualization-where-to-start) (a great overview of available tools)
