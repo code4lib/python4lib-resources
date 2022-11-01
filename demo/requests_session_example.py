@@ -29,7 +29,7 @@ def make_multiple_requests_in_session():
 	"""
     with Session() as session:
         session.headers.update(
-            {"User-Agent": "tomaszkalata@bookops.org", "Accept": "application/json"}
+            {"User-Agent": "my_email", "Accept": "application/json"}
         )  # will attach these parameters to each request header during the session
         session.timeout = 5
 
