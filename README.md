@@ -36,12 +36,13 @@ Shared space for the Python{4}Lib group
 
 ## Tools
 
-### Briefcase (packaging)
+### Packaging
+#### Briefcase (packaging)
 + [Briefcase documentation](https://briefcase.readthedocs.io/en/latest/)
 + [PyCon 2020 'Snakes In a Case' talk by Russell Keith-Magee](https://us.pycon.org/2020/schedule/presentation/126/)
 + [Qt for Python & Briefcase](https://doc.qt.io/qtforpython/deployment-briefcase.html)
 
-### PyInstaller (packaging)
+#### PyInstaller (packaging)
 + [PyInstaller documentation](https://pyinstaller.org/en/stable/index.html)
 + [Easy Steps to Create an Executable in Python Using Pyinstaller / Renu Khandelwal](https://medium.com/swlh/easy-steps-to-create-an-executable-in-python-using-pyinstaller-cc48393bcc64)
 + [Using PyInstaller to Easily Distribute Python Applications / Luke Lee](https://realpython.com/pyinstaller-python/)
@@ -50,4 +51,10 @@ Shared space for the Python{4}Lib group
 + [VisualTK](https://visualtk.com/) / (great starting point to visually create a GUI in Tkinter)
 
 ### Visualization
-+ [Python Data Visualization: Where to Start? : Interview with Chris Moffitt / Talk Python To Me: episode # 384](https://talkpython.fm/episodes/transcript/384/python-data-visualization-where-to-start) (a great overview of available tools)
++ [Python Data Visualization: Where to Start? : Interview with Chris Moffitt / Talk Python To Me: episode # 384](https://talkpython.fm/episodes/
+transcript/384/python-data-visualization-where-to-start) (a great overview of available tools)
+
+### HTTP
+#### Requests
++ [Requests official docs](https://requests.readthedocs.io/en/latest/)
++ [Python's Requests Library (Guide) / Alex Ronquillo](https://realpython.com/python-requests/)
