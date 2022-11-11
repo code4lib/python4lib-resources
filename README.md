@@ -28,7 +28,7 @@ Shared space for the Python{4}Lib group
 + [Python Bytes](https://pythonbytes.fm/) weekly Python news podcast hosted by Michael Kennedy and Brian Okken
 + [Test & Code](https://testandcode.com/) hosted by Brian Okken, focused on automated testing in Python
 + [Talk Python To Me](https://talkpython.fm/) hosted by Michael Kennedy
-* [Podcast.__init__](https://www.pythonpodcast.com/) hosted by Tobias Macey
++ [Podcast.__init__](https://www.pythonpodcast.com/) hosted by Tobias Macey
 
 ### Blogs
 + [Practical Business Python](https://pbpython.com/) / data science centric
