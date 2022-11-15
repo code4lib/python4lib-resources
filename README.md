@@ -53,8 +53,7 @@ Shared space for the Python{4}Lib group
 + [VisualTK](https://visualtk.com/) / (great starting point to visually create a GUI in Tkinter)
 
 ### Visualization
-+ [Python Data Visualization: Where to Start? : Interview with Chris Moffitt / Talk Python To Me: episode # 384](https://talkpython.fm/episodes/
-transcript/384/python-data-visualization-where-to-start) (a great overview of available tools)
++ [Python Data Visualization: Where to Start? : Interview with Chris Moffitt / Talk Python To Me: episode # 384](https://talkpython.fm/episodes/transcript/384/python-data-visualization-where-to-start) (a great overview of available tools)
 
 ### HTTP
 #### Requests
