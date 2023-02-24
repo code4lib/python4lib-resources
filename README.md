@@ -43,8 +43,9 @@ Shared space for the Python{4}Lib group
 + [pybibframe](https://pypi.org/project/pybibframe/) - MARC/XML to RDF or Versa output converter
 + [pymarc](https://pymarc.readthedocs.io/en/latest/) - MARC parser
 
-#### ILS wrappers
+#### ILS & other library systems wrappers
 + [almapipy](https://github.com/UCDavisLibrary/almapipy) - Alma API wrapper
++ [caiasoft-sdk-python](https://github.com/kstatelibraries/caiasoft-sdk-python) - SDK for Connecting to the CaiaSoft API
 
 #### Transliteration / romanization
 + [Aksharamukha](https://github.com/virtualvinodh/aksharamukha-python) - transliteration of 120 Indic languages
