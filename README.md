@@ -35,8 +35,29 @@ Shared space for the Python{4}Lib group
 
 ### Presentations
 + [Finding a path forward: The use of Python to support technical services work in academic libraries](https://docs.google.com/presentation/d/1598qxRIB08_kLaJov_CsKWHw5VctFY0MIZhohQUG6ww/edit#slide=id.p1) Talk given at Python{4}Lib 9/20/22 by Maria Collins and Xiaoyan Song based on their presentation at ER&L 2022
++ [Intro to unit testing in Python / Yamil Suárez](https://docs.google.com/presentation/d/1t1dl7SANyhp4uClRP2JsijWj05nr5AkbUJIAB66GKFQ/edit?usp=sharing)
 
 ## Tools
+
+### Library metadata
++ [pybibframe](https://pypi.org/project/pybibframe/)
++ [pymarc](https://pymarc.readthedocs.io/en/latest/) - MARC parser
+
+#### ILS wrappers
++ [almapipy](https://github.com/UCDavisLibrary/almapipy) - Alma API wrapper
+
+#### Transliteration / romanization
++ [Aksharamukha](https://github.com/virtualvinodh/aksharamukha-python) - transliteration of 120 Indic languages
++ [ArabicTransliterator](https://github.com/MTG/ArabicTransliterator) - ALA-LC transliteration tool for Arabic
++ [cyrillic-transliteration](https://github.com/opendatakosovo/cyrillic-transliteration) - bi-directional transliteration of Cyrillic script to Latin script and vice versa
+
+### GUI
++ [VisualTK](https://visualtk.com/) / (great starting point to visually create a GUI in Tkinter)
+
+### HTTP
+#### Requests
++ [Requests official docs](https://requests.readthedocs.io/en/latest/)
++ [Python's Requests Library (Guide) / Alex Ronquillo](https://realpython.com/python-requests/)
 
 ### Packaging
 #### Briefcase (packaging)
@@ -49,13 +70,8 @@ Shared space for the Python{4}Lib group
 + [Easy Steps to Create an Executable in Python Using Pyinstaller / Renu Khandelwal](https://medium.com/swlh/easy-steps-to-create-an-executable-in-python-using-pyinstaller-cc48393bcc64)
 + [Using PyInstaller to Easily Distribute Python Applications / Luke Lee](https://realpython.com/pyinstaller-python/)
 
-### GUI
-+ [VisualTK](https://visualtk.com/) / (great starting point to visually create a GUI in Tkinter)
+### Testing
++ [Intro to unit testing in Python / Yamil Suárez](https://docs.google.com/presentation/d/1t1dl7SANyhp4uClRP2JsijWj05nr5AkbUJIAB66GKFQ/edit?usp=sharing)
 
 ### Visualization
 + [Python Data Visualization: Where to Start? : Interview with Chris Moffitt / Talk Python To Me: episode # 384](https://talkpython.fm/episodes/transcript/384/python-data-visualization-where-to-start) (a great overview of available tools)
-
-### HTTP
-#### Requests
-+ [Requests official docs](https://requests.readthedocs.io/en/latest/)
-+ [Python's Requests Library (Guide) / Alex Ronquillo](https://realpython.com/python-requests/)
