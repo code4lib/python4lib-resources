@@ -40,7 +40,7 @@ Shared space for the Python{4}Lib group
 ## Tools
 
 ### Library metadata
-+ [pybibframe](https://pypi.org/project/pybibframe/)
++ [pybibframe](https://pypi.org/project/pybibframe/) - MARC/XML to RDF or Versa output converter
 + [pymarc](https://pymarc.readthedocs.io/en/latest/) - MARC parser
 
 #### ILS wrappers
