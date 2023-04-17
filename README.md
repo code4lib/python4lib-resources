@@ -1,5 +1,6 @@
 # p4l-resources
 Shared space for the Python{4}Lib group.
+
 See our [meeting notes](mtg_notes.md) for more details.
 
 
@@ -11,6 +12,8 @@ See our [meeting notes](mtg_notes.md) for more details.
 + [Automate the Boring Stuff with Python : practical programming for total beginners / Al Sweigart](https://worldcat.org/title/1128094127)
 + [Effective Python: 59 Ways to Write Better Python / Brett Slatkin](https://www.worldcat.org/title/1140129622)
 + [Pandas for everyone: Python data analysis / Daniel Y. Chen](https://worldcat.org/en/title/1240309883)
++ [Data Visualization with Python and JavaScript, 2nd Edition
+by Kyran Dale](https://www.oreilly.com/library/view/data-visualization-with/9781098111861/)
 
 ### Tutorials
 + [Official Python Tutorial](https://docs.python.org/3/tutorial/index.html)
@@ -18,6 +21,8 @@ See our [meeting notes](mtg_notes.md) for more details.
 ### Courses
 + General Python courses on [Coursera](https://www.coursera.org/courses?query=python) (free to enroll)
 + [Python for Librarians / Library Juice Academy](https://libraryjuiceacademy.com/shop/course/270-python-for-librarians/) (fee)
++ [Library Carpentry](https://librarycarpentry.org/lessons/) (free lessons, paid sessions with an instructor)
++ [Learn Python 3 the Hard Way / Zed Shaw](https://shop.learncodethehardway.org/access/buy/9/) (free with O'Reilly for Higher Education subscription)
 
 ### Articles
 + [Fuzzy Matching at Scale / Josh Taylor](https://towardsdatascience.com/fuzzy-matching-at-scale-84f2bfd0c536)
@@ -52,6 +57,7 @@ See our [meeting notes](mtg_notes.md) for more details.
 
 ### GUI
 + [VisualTK](https://visualtk.com/) / (great starting point to visually create a GUI in Tkinter)
++ [Gooey](https://pypi.org/project/Gooey/) (simple GUI package, transforms argparse into GUI)
 
 ### HTTP
 #### Requests
@@ -74,3 +80,5 @@ See our [meeting notes](mtg_notes.md) for more details.
 
 ### Visualization
 + [Python Data Visualization: Where to Start? : Interview with Chris Moffitt / Talk Python To Me: episode # 384](https://talkpython.fm/episodes/transcript/384/python-data-visualization-where-to-start) (a great overview of available tools)
++ [Data Visualization with Python and JavaScript, 2nd Edition
+by Kyran Dale](https://www.oreilly.com/library/view/data-visualization-with/9781098111861/)
