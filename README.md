@@ -3,6 +3,8 @@ Shared space for the Python{4}Lib group.
 
 See our [meeting notes](mtg_notes.md) for more details.
 
+Would like to suggest a worthy resource? See [contributing instructions](CONTRIBUTING.md).
+
 
 ## Python Resources
 ### Reference
