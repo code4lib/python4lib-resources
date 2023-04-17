@@ -1,8 +1,6 @@
 # p4l-resources
-Shared space for the Python{4}Lib group
-
-## 7DaysOfCode Challenge
-+ [klinga](https://github.com/klinga/p4l-first-challenge)
+Shared space for the Python{4}Lib group.
+See our [meeting notes](mtg_notes.md) for more details.
 
 
 ## Python Resources
