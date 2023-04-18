@@ -28,6 +28,7 @@ by Kyran Dale](https://www.oreilly.com/library/view/data-visualization-with/9781
 
 ### Articles
 + [Fuzzy Matching at Scale / Josh Taylor](https://towardsdatascience.com/fuzzy-matching-at-scale-84f2bfd0c536)
++ [19 Sweet Python Syntax Sugar for Improving Your Coding Experience](https://medium.com/techtofreedom/19-sweet-python-syntax-sugar-for-improving-your-coding-experience-37c4118fc6b1)
 
 ### Podcasts
 + [Python Bytes](https://pythonbytes.fm/) weekly Python news podcast hosted by Michael Kennedy and Brian Okken
