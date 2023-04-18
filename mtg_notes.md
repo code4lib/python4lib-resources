@@ -29,6 +29,17 @@ A very basic intro to Python for librarians who have little to no experience wit
 + Talked about copy /pasting parts of your Python error messages right into Google to help you figure out what is wrong
   + and how https://stackoverflow.com/ is a common place to look for error advice
   + Google Colab actually offers to send you to StackOverflow when you get an error on code running in Colab
++ @Yamil Suárez shared a code snippet demonstrating how to read a file stored in a Google Drive into Google Colab:
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+
+import pandas as pd
+
+df = pd.read_csv('/content/drive/My Drive/Colab Notebooks/data.tsv', sep='\t')
+```
+
+
 
 ### March 21, 2023 
 + Talked about this group’s [new repository](https://github.com/code4lib/python4lib-resources), and that we want to encourage others to contribute changes via PRs (or reach out to the group)
