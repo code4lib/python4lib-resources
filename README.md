@@ -41,7 +41,7 @@ by Kyran Dale](https://www.oreilly.com/library/view/data-visualization-with/9781
 ### Member Presentations
 + [Finding a path forward: The use of Python to support technical services work in academic libraries](https://docs.google.com/presentation/d/1598qxRIB08_kLaJov_CsKWHw5VctFY0MIZhohQUG6ww/edit#slide=id.p1) Talk given at Python{4}Lib 9/20/22 by Maria Collins and Xiaoyan Song based on their presentation at ER&L 2022
 + [Intro to unit testing in Python / Yamil Suárez](https://docs.google.com/presentation/d/1t1dl7SANyhp4uClRP2JsijWj05nr5AkbUJIAB66GKFQ/edit?usp=sharing)
-+ [Speedy pandas for Python / Michelle Janowiecki](https://docs.google.com/presentation/d/1xRdNVonTxi9-gEsQkNvbF1e47o_2cuo1iimunoFUky4/edit#slide=id.p)
++ [Speedy pandas : a super brief intro to Python's pandas library / Michelle Janowiecki](https://docs.google.com/presentation/d/1xRdNVonTxi9-gEsQkNvbF1e47o_2cuo1iimunoFUky4/edit#slide=id.p)
 
 ## Tools
 
@@ -62,7 +62,7 @@ by Kyran Dale](https://www.oreilly.com/library/view/data-visualization-with/9781
 #### Pandas
 + [Pandas documentation](https://pandas.pydata.org/pandas-docs/stable/index.html)
 + [Intro to Python: Pandas for Metadata Transformation and Cleanup / workshop by Michelle Janowiecki](https://mjanowiecki.github.io/intro-pandas-metadata/intro.html)
-+ [Speedy pandas for Python / Michelle Janowiecki](https://docs.google.com/presentation/d/1xRdNVonTxi9-gEsQkNvbF1e47o_2cuo1iimunoFUky4/edit#slide=id.p)
++ [Speedy pandas / Michelle Janowiecki](https://docs.google.com/presentation/d/1xRdNVonTxi9-gEsQkNvbF1e47o_2cuo1iimunoFUky4/edit#slide=id.p)
 + [All Pandas json_normalize() you should know for flattening JSON / B. Chen](https://towardsdatascience.com/all-pandas-json-normalize-you-should-know-for-flattening-json-13eae1dfb7dd)
 
 ### GUI
