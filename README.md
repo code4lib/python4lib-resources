@@ -39,9 +39,10 @@ by Kyran Dale](https://www.oreilly.com/library/view/data-visualization-with/9781
 ### Blogs
 + [Practical Business Python](https://pbpython.com/) / data science centric
 
-### Presentations
+### Member Presentations
 + [Finding a path forward: The use of Python to support technical services work in academic libraries](https://docs.google.com/presentation/d/1598qxRIB08_kLaJov_CsKWHw5VctFY0MIZhohQUG6ww/edit#slide=id.p1) Talk given at Python{4}Lib 9/20/22 by Maria Collins and Xiaoyan Song based on their presentation at ER&L 2022
 + [Intro to unit testing in Python / Yamil Suárez](https://docs.google.com/presentation/d/1t1dl7SANyhp4uClRP2JsijWj05nr5AkbUJIAB66GKFQ/edit?usp=sharing)
++ [Speedy pandas : a super brief intro to Python's pandas library / Michelle Janowiecki](https://docs.google.com/presentation/d/1xRdNVonTxi9-gEsQkNvbF1e47o_2cuo1iimunoFUky4/edit#slide=id.p)
 
 ## Tools
 
@@ -57,6 +58,13 @@ by Kyran Dale](https://www.oreilly.com/library/view/data-visualization-with/9781
 + [Aksharamukha](https://github.com/virtualvinodh/aksharamukha-python) - transliteration of 120 Indic languages
 + [ArabicTransliterator](https://github.com/MTG/ArabicTransliterator) - ALA-LC transliteration tool for Arabic
 + [cyrillic-transliteration](https://github.com/opendatakosovo/cyrillic-transliteration) - bi-directional transliteration of Cyrillic script to Latin script and vice versa
+
+### Data Analysis
+#### Pandas
++ [Pandas documentation](https://pandas.pydata.org/pandas-docs/stable/index.html)
++ [Intro to Python: Pandas for Metadata Transformation and Cleanup / workshop by Michelle Janowiecki](https://mjanowiecki.github.io/intro-pandas-metadata/intro.html)
++ [Speedy pandas / Michelle Janowiecki](https://docs.google.com/presentation/d/1xRdNVonTxi9-gEsQkNvbF1e47o_2cuo1iimunoFUky4/edit#slide=id.p)
++ [All Pandas json_normalize() you should know for flattening JSON / B. Chen](https://towardsdatascience.com/all-pandas-json-normalize-you-should-know-for-flattening-json-13eae1dfb7dd)
 
 ### GUI
 + [VisualTK](https://visualtk.com/) / (great starting point to visually create a GUI in Tkinter)
