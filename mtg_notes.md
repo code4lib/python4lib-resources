@@ -1,3 +1,79 @@
+### April 18, 2023
+At today meeting we had @michelle.janowiecki give a short presentation on Pandas, partially based on a longer Pandas presentation she has given before.
+Speedy pandas for Python [presentation](https://docs.google.com/presentation/d/1xRdNVonTxi9-gEsQkNvbF1e47o_2cuo1iimunoFUky4/edit#slide=id.p)
+Here are a couple of useful links from her presentation...
+
+#### Pandas Official resources
++ [documentation website](https://pandas.pydata.org/pandas-docs/stable/index.html)
++ [User Guide](https://pandas.pydata.org/pandas-docs/stable/user_guide/index.html)
++ [API reference](https://pandas.pydata.org/pandas-docs/stable/reference/index.html)
+
+#### Pandas Additional resources
++ ["Pandas for Metadata Transformation and Cleanup" workshop by Michelle Janowiecki](https://mjanowiecki.github.io/intro-pandas-metadata/intro.html)
++ the best book: [Pandas for everyone : Python data analysis](https://www.worldcat.org/title/pandas-for-everyone-python-data-analysis/oclc/1240309883?referer=br&ht=edition)
+
+#### Examples of the code Michelle demonstrated
+
+```python
+import pandas as pd
+
+filename = "sampleData.csv"
+df = pd.read_csv(filename)
+print(df.head())
+
+print(df.columns)
+
+degree_department = df["degree_department"]
+department_unique = degree_department.unique()
+print(department_unique)
+unique_list = list(department_unique)
+print(unique_list)
+```
+
+```python
+import pandas as pd
+
+filename = "sampleData.csv"
+df = pd.read_csv(filename)
+
+print(df.shape)
+df = df.dropna(axis=0, how="all")
+df = df.dropna(axis=1, how="all")
+df = df.drop_duplicates()
+df["title"] = df["title"].str.strip()
+
+print(df.head())
+print(df.shape)
+
+df.to_csv("sampleData_cleaned.csv", index=False)
+```
+
+```python
+import pandas as pd
+
+df_1 = pd.read_csv("frame_1.csv")
+df_2 = pd.read_csv("frame_2.csv")
+
+merged = pd.merge(df_1, df_2, how="left", on="subject_id")
+print(merged.head())
+
+merged.to_csv("merged_frames.csv", index=False)
+```
+
+These are some of the Pandas features @michelle.janowiecki demonstrated today
++ drop_duplicates()
++ dropna()
++ merge()
+
+After the presentation we all exchanged pandas usage tips
++ like pd.json_normalize(a_dict)
+  + “All Pandas json_normalize() you should know for flattening JSON”
+  + https://towardsdatascience.com/all-pandas-json-normalize-you-should-know-for-flattening-json-13eae1dfb7dd
++ and the ability of doing mathematical
++ also there was a mention of the command line JQ tool for parsing JSON
+  + https://stedolan.github.io/jq/
+
+
 ### April 4, 2023
 A very basic intro to Python for librarians who have little to no experience with Python but who want to get started.
 The mini-workshop titled, "An Introduction to Python for Absolute Beginners":
