@@ -3,6 +3,12 @@ Shared space for the Python{4}Lib group.
 
 See our [meeting notes](mtg_notes.md) for more details.
 
+Upcoming meetings (meetings at 11am Eastern time):
++ May 16th, 2023
++ May 30th, 2023
++ June 13th, 2023
++ June 27th, 2023
+
 Would like to suggest a worthy resource? See [contributing instructions](CONTRIBUTING.md).
 
 
