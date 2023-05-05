@@ -86,6 +86,16 @@ by Kyran Dale](https://www.oreilly.com/library/view/data-visualization-with/9781
 + [Easy Steps to Create an Executable in Python Using Pyinstaller / Renu Khandelwal](https://medium.com/swlh/easy-steps-to-create-an-executable-in-python-using-pyinstaller-cc48393bcc64)
 + [Using PyInstaller to Easily Distribute Python Applications / Luke Lee](https://realpython.com/pyinstaller-python/)
 
+### QR codes
++ [QR Code Demystify / Ivan](https://ivantay2003.medium.com/qr-code-demystify-2a5263ab136e)
++ [python-barcode](https://python-barcode.readthedocs.io/en/stable/)
++ [PyQRCode](https://pythonhosted.org/PyQRCode/)
++ [pyzbar](https://github.com/NaturalHistoryMuseum/pyzbar/)
+
+### RDF
++ [rdflib](https://rdflib.readthedocs.io/en/stable/)
++ [Gephi](https://gephi.org)
+
 ### Testing
 + [Intro to unit testing in Python / Yamil Suárez](https://docs.google.com/presentation/d/1t1dl7SANyhp4uClRP2JsijWj05nr5AkbUJIAB66GKFQ/edit?usp=sharing)
 
@@ -93,3 +103,5 @@ by Kyran Dale](https://www.oreilly.com/library/view/data-visualization-with/9781
 + [Python Data Visualization: Where to Start? : Interview with Chris Moffitt / Talk Python To Me: episode # 384](https://talkpython.fm/episodes/transcript/384/python-data-visualization-where-to-start) (a great overview of available tools)
 + [Data Visualization with Python and JavaScript, 2nd Edition
 by Kyran Dale](https://www.oreilly.com/library/view/data-visualization-with/9781098111861/)
++ [Plotly](https://plotly.com/)
++ [Streamlit](https://streamlit.io)
