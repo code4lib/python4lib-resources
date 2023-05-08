@@ -1,3 +1,39 @@
+### May 2, 2023
++ We talked about Rebecca’s code for parsing MARCXML from Ex Libris Alma
+Then we talked about our various experiences (good and bad) with parsing XML with Python’s built in ElementTree module versus LXML versus Beautiful soup. We took a moment to talk about the typical issues that can come up with web scraping when a site’s HTML changes over time.
+
++ We then spoke about Eric Morgan’s recent question to the Code4lib mailing list about “literary warrant.”
+
++ John asked if anyone had experience with Python modules for creating barcodes. We briefly also spoke about creating QR codes with Python.
+John is using this Python module:
+https://python-barcode.readthedocs.io/en/stable/
+Jason is using:
+PyQRCode==1.2.1
+pyzbar==0.1.9
+Emma shared a good explainer on QR codes : https://ivantay2003.medium.com/qr-code-demystify-2a5263ab136e
+12:00
+
++ Meghan asked about what tools to use when handed Excel files or CSV files that users would like some charts created from the data in a way that is shareable. This is in addition to creating charts inside Excel and Jupiter or Colab notebooks, then sharing them with a group of people.
+Here are some of the suggestions discussed...
+Plotly - https://plotly.com/
+Streamlit - https://streamlit.io/
+This book on mixing Python to process data, but then use JS based tools for web visualization was mentioned again in this group...
+Data Visualization with Python and JavaScript, 2nd Edition
+https://www.oreilly.com/library/view/data-visualization-with/9781098111861/
+The author’s website is also worth a look: https://www.kyrandale.com
+https://www.kyrandale.com
+
++ We talked about creating RDFs with Python, including Python modules, visualization tool, and GML files
+https://github.com/RDFLib/rdflib
+https://rdflib.readthedocs.io/en/stable/
+“RDFLib is a Python library for working with RDF, a simple yet powerful language for representing information.”
+https://gephi.org/
+“Gephi is the leading visualization and exploration software for all kinds of graphs and networks. Gephi is open-source and free.”
+GML files
+https://en.wikipedia.org/wiki/Graph_Modelling_Language
++ We talked briefly about the new version 5.0 of Pymarc and that we would like to go over the changes to Pymarc in thsi group in the future
+https://gitlab.com/pymarc/pymarc/-/releases/v5.0.0
+
 ### April 18, 2023
 At today meeting we had @michelle.janowiecki give a short presentation on Pandas, partially based on a longer Pandas presentation she has given before.
 [Speedy pandas : a super brief intro to Python's pandas library (see slides)](https://docs.google.com/presentation/d/1xRdNVonTxi9-gEsQkNvbF1e47o_2cuo1iimunoFUky4/edit#slide=id.p)
