@@ -3,6 +3,12 @@ Shared space for the Python{4}Lib group.
 
 See our [meeting notes](mtg_notes.md) for more details.
 
+Upcoming meetings (meetings at 11am Eastern time):
++ May 16th, 2023
++ May 30th, 2023
++ June 13th, 2023
++ June 27th, 2023
+
 Would like to suggest a worthy resource? See [contributing instructions](CONTRIBUTING.md).
 
 
@@ -103,5 +109,3 @@ by Kyran Dale](https://www.oreilly.com/library/view/data-visualization-with/9781
 + [Python Data Visualization: Where to Start? : Interview with Chris Moffitt / Talk Python To Me: episode # 384](https://talkpython.fm/episodes/transcript/384/python-data-visualization-where-to-start) (a great overview of available tools)
 + [Data Visualization with Python and JavaScript, 2nd Edition
 by Kyran Dale](https://www.oreilly.com/library/view/data-visualization-with/9781098111861/)
-+ [Plotly](https://plotly.com/)
-+ [Streamlit](https://streamlit.io)
