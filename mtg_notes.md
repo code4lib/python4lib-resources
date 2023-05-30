@@ -60,7 +60,7 @@ record.add_field(
 
 + New model has advantages over subfiels as a list of strings:
   + matches how cataloger's think about subfields - as code-value pairs (Tomasz)
-  + helps guard against errors such as missing an element to properly create subfield
+  + helps guard against errors such as missing an element to properly create a subfield
 
 
 + discussed briefly differences between pymarc and similar Pearl library [MARC::Record]https://metacpan.org/pod/MARC::Record()
