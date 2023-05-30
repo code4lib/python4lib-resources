@@ -1,3 +1,86 @@
+### May 16, 2023
++ We had a brief discussion about [pymarc](https://pymarc.readthedocs.io/en/latest/) and [MARC authority data](https://www.loc.gov/marc/authority/ecadhome.html)
+  + sparked by Benjamin's issues with using pymarc for authority records
+  + Tomasz run some quick tests and they looked good: `pymarc` was able to read such data, but more tests are needed to see if manipulating and writing is done correctly. There were concerns about differences in the leader field between the bibliographic and authority data
+
+#### Ed Summers intro to new pymarc
++ David introduced Ed
++ Ed stated pymarc is work of many people, Ed's involvement is more of the maintainer
+
+##### Breaking changes in pymarc v.5:
++ new class `pymarc.Field.Subfield`
++ helper properties instead of methods
+  + old: record.title(), new: record.title
+  + old: record.publisher(), new: record.publisher
++ automatically sets UTF-8 code in record leader in the position 9
+  + pymarc always converts data to unicode, but before it did not attempt to change the code in the leader to reflect that
+  + most people don't want to write MARC-8, and want UTF-8 encoded data
+
++ Ed shows off doing live coding! Uses [Google Colab](https://colab.research.google.com/) and Jupyter notebooks (tip: you can pip install packages in Colab: `!pip install pymarc`, the exclamation mark will tell the notbook cell in not a code but a command line script)
++ Ed shows initiating new record instance, and adding fields with the new model for subfields
++ `Subfield` is a python [`namedtuple`](https://docs.python.org/3.10/library/collections.html?highlight=namedtuple#collections.namedtuple)
+
+*New:*
+```python
+from pymarc import Record, Field, Subfield
+
+record = Record()
+record.add_field(
+    Field(
+        tag="245",
+        indicators=["0", "0"],
+        subfields=[
+            Subfield(code="a", value="Foo :"),
+            Subfield(code="b", value=" bar /"),
+            Subfield(code="c", value="Spam.")
+        ]
+    ))
+```
+or simply:
+```python
+field = Field(
+    tag="245",
+    indicators=["0", "0"],
+    subfields=[
+        Subfield("a", "Foo :"),
+        Subfield("b", "bar /"),
+        Subfield("c", "Spam.")
+    ])
+```
+
+*old*
+```python
+record.add_field(
+    Field(
+        tag="245",
+        indicators=["0", "0"],
+        subfields=["a", "Foo :", "b", "bar /", "c", "Spam."]
+    ))
+```
+
++ New model has advantages over subfiels as a list of strings:
+  + matches how cataloger's think about subfields - as code-value pairs (Tomasz)
+  + helps guard against errors such as missing an element to properly create subfield
+
+
++ discussed briefly differences between pymarc and similar Pearl library [MARC::Record]https://metacpan.org/pod/MARC::Record()
++ Ed showed a tip how to avoid malformed or otherwise invalid records when looping over a file:
+Ed errors looping over return None (malformed bibs, leader lenght problems, )
+
+```python
+from pymarc import MARCReader
+
+with open("foo.mrc", "rb") as marcfile:
+    reader = MARCReader(marcfile)
+    for record in reader:
+        if record is None:
+            print(reader.current_exception)
+        else:
+          # do something
+```
+
++ talked about potential new features in pymarc, for example handling of [linked 880 fields](https://www.loc.gov/marc/bibliographic/bd880.html) that include parallel data in non-Latin scripts
+
 ### May 2, 2023
 + We talked about Rebecca’s code for parsing MARCXML from Ex Libris Alma
 Then we talked about our various experiences (good and bad) with parsing XML with Python’s built in ElementTree module versus LXML versus Beautiful soup. We took a moment to talk about the typical issues that can come up with web scraping when a site’s HTML changes over time.
