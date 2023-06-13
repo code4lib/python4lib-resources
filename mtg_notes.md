@@ -1,3 +1,14 @@
+### May 30, 2023
++ David shared his code utlizing `pymarc` to harvest and clean OCLC records. An older example of code: https://github.com/derlandson/PyCat
++ Demo of Match MARC toolset as well.
++ Tomasz reported his first experiences using `pymarc` v.5
++ Discussed a potential `pymarc` feature ordering subfields accoding to a particular field cataloging practice
+  + challenge: no clear, outlined rules to based it on
++ Rebecca demoed a script created to have circ desk staff click a single button for simple questions (directions, tech, find a book, etc.) Creates output file and emails results as csv once per month.
+ Currently doesn’t need admin permissions but various features may impact this.
+  + simplified `pyinstaller` app: [auto-py-to-exe]
+(https://pypi.org/project/auto-py-to-exe/) was used to help redeploy to other PCs.
+
 ### May 16, 2023
 + We had a brief discussion about [pymarc](https://pymarc.readthedocs.io/en/latest/) and [MARC authority data](https://www.loc.gov/marc/authority/ecadhome.html)
   + sparked by Benjamin's issues with using pymarc for authority records
