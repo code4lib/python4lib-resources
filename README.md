@@ -4,10 +4,10 @@ Shared space for the Python{4}Lib group.
 See our [meeting notes](mtg_notes.md) for more details.
 
 Upcoming meetings (meetings at 11am Eastern time):
-+ May 16th, 2023
-+ May 30th, 2023
 + June 13th, 2023
 + June 27th, 2023
++ July 11th, 2023
++ July 25th, 2023
 
 Would like to suggest a worthy resource? See [contributing instructions](CONTRIBUTING.md).
 
@@ -91,6 +91,8 @@ by Kyran Dale](https://www.oreilly.com/library/view/data-visualization-with/9781
 + [PyInstaller documentation](https://pyinstaller.org/en/stable/index.html)
 + [Easy Steps to Create an Executable in Python Using Pyinstaller / Renu Khandelwal](https://medium.com/swlh/easy-steps-to-create-an-executable-in-python-using-pyinstaller-cc48393bcc64)
 + [Using PyInstaller to Easily Distribute Python Applications / Luke Lee](https://realpython.com/pyinstaller-python/)
++ [auto-py-to-exe]
+(https://pypi.org/project/auto-py-to-exe/) - PyInstaller made easy
 
 ### QR codes
 + [QR Code Demystify / Ivan](https://ivantay2003.medium.com/qr-code-demystify-2a5263ab136e)
