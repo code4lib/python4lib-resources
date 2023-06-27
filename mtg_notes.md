@@ -1,3 +1,30 @@
+### June 13, 2023
++ Python podcasts suggestion from Tomasz: [PythonBytes](https://pythonbytes.fm/)
++ David talked about an new Python module called “Pandas AI” that did find useful if you have a paid chatGPT account
+  + https://github.com/gventuri/pandas-ai
+  + “Pandas AI is a Python library that integrates generative artificial intelligence capabilities into Pandas, making dataframes conversational”
+  + David id also find a poorly written blog post that was claiming featured that Pandas AI does NOT have, so stay away from this article…
+    + https://levelup.gitconnected.com/introducing-pandasai-the-generative-ai-python-library-568a971af014
++ We talked about when we have used chatGPT to write some Python code snippets, and what were our results.
+  + The results were mostly positive, but we talked about the benefits of already knowing Python well enough to formulate request more precisely and evaluate how well the chatGPT responses were
+  + Someone mentioned that chatGPT has become as an alternative to StackOverflow, specially if you are in a hurry
+  + Someone mentioned Github Copilot: “Those of us who have GitHub educator accounts have free access to Copilot. Have not tried it. Very reluctant, personally.” Which uses AI to write code for you.
+    + https://en.wikipedia.org/wiki/GitHub_Copilot
+    + As a counter argument there is this article [“Why I don’t use Copilot”](https://inkdroid.org/2023/06/04/copilot/)
+  + Will StackOverflow become obsolete with the revolution in AI? Yamil thinks that it is a good inspiration for prompts, and still has great information
+  + we saw an example of sharing a snippet of object oriented Python code to ask chatGPT to explain what is missing
+  + One of the participants was glad to get the explanations from chatGPT of what was missing in their object oriented code
+    + Here is the link to the chat https://chat.openai.com/share/fea426fb-cb02-4b38-9f42-128f59115fc4
+  + A recent Code4Lib article that talked about using AI generated code was shared [“Utilizing R and Python for Institutional Repository Daily Jobs”](https://journal.code4lib.org/articles/17134)
+  + We briefly talked about the ethics of using AI written code that was trained on code that other published publicly on Github, but without their explicit consent
+  + Podcast example crated by AI:
+    “I’ve been listening to this series in the Planet Money podcast where they try to make an entire podcast episode made by AI:” https://www.npr.org/series/1178395718/planet-money-makes-an-episode-using-ai
+  + Charles asked if anyone was using Python to automate work with the Azure cloud computing platform
+    + https://en.wikipedia.org/wiki/Microsoft_Azure
+    + We briefly talked about [“Azure Functions”](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview?pivots=programming-language-csharp) which seem similar to [AWS Lambda](https://en.wikipedia.org/wiki/AWS_Lambda)
++ We talked about a great site and free book that many people use to get started with Python [“Python for Everyone”](https://www.py4e.com/)
++ We also talked about the well known and still very popular Python [Requests](https://requests.readthedocs.io/en/latest/) module, and but also the newer and “async compatible” [httpx](https://www.python-httpx.org/) module, which was also mentioned on the Python Slack channel.
+
 ### May 30, 2023
 + David shared his code utlizing `pymarc` to harvest and clean OCLC records. An older example of code: https://github.com/derlandson/PyCat
 + Demo of Match MARC toolset as well.
