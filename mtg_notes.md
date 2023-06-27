@@ -12,7 +12,7 @@
     + https://en.wikipedia.org/wiki/GitHub_Copilot
     + As a counter argument there is this article [“Why I don’t use Copilot”](https://inkdroid.org/2023/06/04/copilot/)
   + Will StackOverflow become obsolete with the revolution in AI? Yamil thinks that it is a good inspiration for prompts, and still has great information
-  + we saw an example of sharing a snippet of object oriented Python code to ask chatGPT to explain what is missing
+  + We saw an example of sharing a snippet of object oriented Python code to ask chatGPT to explain what is missing
   + One of the participants was glad to get the explanations from chatGPT of what was missing in their object oriented code
     + Here is the link to the chat https://chat.openai.com/share/fea426fb-cb02-4b38-9f42-128f59115fc4
   + A recent Code4Lib article that talked about using AI generated code was shared [“Utilizing R and Python for Institutional Repository Daily Jobs”](https://journal.code4lib.org/articles/17134)
@@ -23,7 +23,7 @@
     + https://en.wikipedia.org/wiki/Microsoft_Azure
     + We briefly talked about [“Azure Functions”](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview?pivots=programming-language-csharp) which seem similar to [AWS Lambda](https://en.wikipedia.org/wiki/AWS_Lambda)
 + We talked about a great site and free book that many people use to get started with Python [“Python for Everyone”](https://www.py4e.com/)
-+ We also talked about the well known and still very popular Python [Requests](https://requests.readthedocs.io/en/latest/) module, and but also the newer and “async compatible” [httpx](https://www.python-httpx.org/) module, which was also mentioned on the Python Slack channel.
++ We also talked about the well known and still very popular Python [Requests](https://requests.readthedocs.io/en/latest/) module, and but also the newer and “async compatible” [HTTPX](https://www.python-httpx.org/) module, which was also mentioned on the Python Slack channel.
 
 ### May 30, 2023
 + David shared his code utlizing `pymarc` to harvest and clean OCLC records. An older example of code: https://github.com/derlandson/PyCat
