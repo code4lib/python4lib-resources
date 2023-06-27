@@ -80,6 +80,7 @@ by Kyran Dale](https://www.oreilly.com/library/view/data-visualization-with/9781
 #### Requests
 + [Requests official docs](https://requests.readthedocs.io/en/latest/)
 + [Python's Requests Library (Guide) / Alex Ronquillo](https://realpython.com/python-requests/)
++ [HTTPX official docs](https://www.python-httpx.org/)
 
 ### Packaging
 #### Briefcase (packaging)
