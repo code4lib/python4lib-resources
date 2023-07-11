@@ -1,3 +1,36 @@
+### June 27, 2023
++ We talked about how the US PyCon (Python Conference) recently released their videos from their 2023 conference
+  + [2023 sessions youtube channel](https://www.youtube.com/watch?v=eZwHvBsoPn4&list=PL2Uw4_HvXqvY2zhJ9AMUa_Z6dtMGF3gtb)
+  + [PyCon YouTube home with past conference videos](https://www.youtube.com/@PyConUS)
++ Charles shared this article about “typo squatting” popular Python modules names to trick users to install malaware: https://arstechnica.com/information-technology/2023/02/451-malicious-packages-available-in-pypi-contained-crypto-stealing-malware/
++ Charles also talked about a project at the University of Miami that collects data from Twitter for research purposes. He mentioned that there is now a an API limit to only be able to check 7 days in the past. He will post the name of the Python module they are using to
++ Eric mentioned issues that he has had issues archiving older tweets in the past. Also mentioned challenges evaluating misspelled words and how to interpret emojis.
++ Talked about unit testing and test coverage with the Python project called [coverage](https://coverage.readthedocs.io/en/7.2.7/)
++ Tomasz mentioned [coveralls](https://coveralls.io/) that gives you nice visual reports on your test coverage that can be integrated with Github and be part of CI
++ we of course talked about using [Pytest](https://docs.pytest.org/en/7.3.x/) for your unit tests
++ For those that are unfamiliar with “unit tests” and “pytest” here a presentation Yamil gave this group a few months ago [“Intro to unit testing in Python”](
+https://docs.google.com/presentation/d/1t1dl7SANyhp4uClRP2JsijWj05nr5AkbUJIAB66GKFQ/edit?usp=sharing)
++ We talked a bit about parallel processing in Python to finish work faster
++ We shared a link to the [free version of chapter 17 of the 2nd edition of “Automate the Boring Stuff with Python”](https://automatetheboringstuff.com/2e/chapter17/)
++ Yamil brought up a suggested approach by the author (Al Sweigart) of “Automate the Boring Stuff with Python” to download files from the internet using the python request module, but in a way that you will not be limited by the amount of free RAM on your computer ([section: Saving Downloaded Files to the Hard Drive](https://automatetheboringstuff.com/2e/chapter12/))
+  + Here is the snippet that uses a loop with the iter_content() method, to prevent using up all your RAM if the file is larger than the amount of free RAM on your system...
+
+```python
+import requests
+
+res = requests.get('https://automatetheboringstuff.com/files/rj.txt')
+res.raise_for_status()
+
+playFile = open('RomeoAndJuliet.txt', 'wb')
+
+for chunk in res.iter_content(100000):
+    playFile.write(chunk)
+```
++ Also we mentioned [networkX](https://networkx.org/): NetworkX is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
++ Tomasz ask if anyone was doing any batch work on images with Python, to find a faster way to process a larger number of images. We talked about perhaps using multiprocessing for this.
+  + Again from the book ["Automating stuff with Python", Ch 19](https://automatetheboringstuff.com/2e/chapter19/) talks about using the [Pillow](https://python-pillow.org/) Python module batch change images
+  + Also there should be ways to use very well known non-python library called ImageMagick, but controlled through Python, for batch making changes to images. Yamil has worked with many projects like the Drupal/PHP based Islandora project, that use ImageMagick for making changes to images
+
 ### June 13, 2023
 + Python podcasts suggestion from Tomasz: [PythonBytes](https://pythonbytes.fm/)
 + David talked about an new Python module called “Pandas AI” that did find useful if you have a paid chatGPT account
