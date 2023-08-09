@@ -1,4 +1,42 @@
-### July 8, 2023
+### August 8, 2023
+Our meet focused on [Pydantic](https://docs.pydantic.dev/latest/). Matt Lincoln from JSTOR Labs gave a brief intorduction into the tool and its uses.
+
+Matt used [this jupyter notebook](demo/pydantic.ipynb) to demo basic Pydantic syntax and validation functinality. 
+
++ Data validation can be done using Python type hints
++ Fast and extensible, Pydantic plays nicely with your linters/IDE/brain. Define how data should be in pure, canonical Python 3.7+; validate it with Pydantic.
++ We briefly talked about wanted to review how to create classes and objects in Python in a future meeting.
++ Pydantic can help with IDE / editor auto complete / auto suggest
++ Pydantic hasa a x.json() function/method to serialize data to JSON
++ great for writing APIs
++ Pydantic has a x.schema() method (which uses JSON schemas)
+    + the schema can then be used to create API documentation for using the API
++ [FastAPI](https://fastapi.tiangolo.com/) platform for Python based APIs uses Pedantic a lot
++ FYI: Pydantic version 2 is just coming out and some products/python modules that use Pydantic may still be not ready for version 2, but shoudl still support version 1
+we also briefly talked about Python’s built in “data classes”
++ “In Python, a data class is a class that is designed to only hold data values. They aren’t different from regular classes, but they usually don’t have any other methods. They are typically used to store information that will be passed between different parts of a program or a system.”
+  + https://docs.python.org/3/library/dataclasses.html
+  + https://realpython.com/python-data-classes/
+  + https://www.dataquest.io/blog/how-to-use-python-data-classes/
++ we talked about that Pydantic is not a replacement of “JSON Schemas”, that Pydantic is a complimentary tool
+  + https://json-schema.org/
+  + https://www.tutorialspoint.com/json/json_schema.htm
++ talked about Pydantic validators and their application
+  + https://docs.pydantic.dev/2.1/usage/validators/
+  + the less strict with lose rules
+  + then will do some clean up/transformation
+  + then switch to a more strict Pydantic validating class
++ we talked about briefly typing in Python in general, and how helpful it can be
+  + https://docs.python.org/3/library/typing.html
+  + https://realpython.com/lessons/type-hinting/
+  + https://towardsdatascience.com/12-beginner-concepts-about-type-hints-to-improve-your-python-code-90f1ba0ac49
+  + “Type hints are performed using Python annotations (introduced since PEP 3107). They are used to add types to variables, parameters, function arguments as well as their return values, class attributes, and methods. Adding type hints has no runtime effect: these are only hints and are not enforced on their own.”
+  + For example, in other languages that are strongly typed like C or C++, if you initially declare a variable as one type (e.g. string), you can’t just later on use it as another type (e.g. int) like we can do in Python
++ questions for Matt:
+  + is there any integration between pydantic and popular [ORMs](https://www.fullstackpython.com/object-relational-mappers-orms.html) (like [sqlalchemy](https://www.sqlalchemy.org/) for example)? Answer: yes, pydantic data classes should work well with most ORMs
+  + can pydantic validation features be useful in format crosswalks when we do not care about JSON output? Answer: yes, although in some cases more strict and detailed validation may be required. Still out of-the-box validiton in pydantic would be very useful in Matt's opinion
+
+### July 25, 2023
 + Rebecca:
   + Inventory tool to active scan vs. lists, processes, & jobs https://github.com/LibraryNinja/alma_inventory_utility/tree/main
   + Utilizes: pysimplegui, auto-py-to-exe
