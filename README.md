@@ -4,10 +4,10 @@ Shared space for the Python{4}Lib group.
 See our [meeting notes](mtg_notes.md) for more details.
 
 Upcoming meetings (meetings at 11am Eastern time):
-+ June 27th, 2023
-+ July 11th, 2023
-+ July 25th, 2023
-+ August 8th, 2023
++ August 22th, 2023
++ September 5th, 2023
++ September 19th, 2023
++ October 3rd, 2023
 
 Would like to suggest a worthy resource? See [contributing instructions](CONTRIBUTING.md).
 
@@ -81,6 +81,8 @@ by Kyran Dale](https://www.oreilly.com/library/view/data-visualization-with/9781
 + [Requests official docs](https://requests.readthedocs.io/en/latest/)
 + [Python's Requests Library (Guide) / Alex Ronquillo](https://realpython.com/python-requests/)
 + [HTTPX official docs](https://www.python-httpx.org/)
+#### Links checkers
++ [LinkChecker official documenation](https://linkchecker.github.io/linkchecker/)
 
 ### Packaging
 #### Briefcase (packaging)

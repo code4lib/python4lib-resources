@@ -1,3 +1,29 @@
+### July 8, 2023
++ Rebecca:
+  + Inventory tool to active scan vs. lists, processes, & jobs https://github.com/LibraryNinja/alma_inventory_utility/tree/main
+  + Utilizes: pysimplegui, auto-py-to-exe
+  + Old method: Make a barcode set, run job on Alma to update
+  + Problem of not really knowing if something wasn’t found or had a status (loan, out of place, etc.)
+  + This is loosely based off of Jeremy Hobbs Lazy Lists utility to adapt to an inventory project. (https://github.com/MrJeremyHobbs/LazyLists)
+  + Examines items in XML
+  + Pulls in some basic information to confirm for users.
+  + Indicates set aside for problematic titles (tech services would handle)
+  + Used autopy-to-exe to allow student workers to run this small utility on their machines.
++ Julie:
+  + Sierra had a shelflist/inventory but it was not really work well, so a python inventory tool is great!
+  + Had used SQL lists to help scan/match with selenium
+  + Tools for link checking?
+  + Authentication with EZ Proxy
+  + https://pypi.org/project/LinkChecker/
++ Charles:
+  + Plotly module for data vis
+  + Neat 54 lines of code to create an interactive map of internet usage over time worldwide
+  + Charles does a 1-hour challenge to help learn new modules.
+  + ChatGPT for helping, there are some prompt setups you can do to reduce repetitive typing
+  + https://code.visualstudio.com now has a postman extension.
+  + https://www.pythonanywhere.com/ helps host and run python in the cloud (from the Anaconda people)
+  + https://www.git-tower.com/education/mac Gui for Git
+
 ### June 27, 2023
 + We talked about how the US PyCon (Python Conference) recently released their videos from their 2023 conference
   + [2023 sessions youtube channel](https://www.youtube.com/watch?v=eZwHvBsoPn4&list=PL2Uw4_HvXqvY2zhJ9AMUa_Z6dtMGF3gtb)
