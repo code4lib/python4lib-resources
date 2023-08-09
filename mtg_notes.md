@@ -81,7 +81,7 @@ Rough and incomplete summary of topics covered today’s (2023-07-11) in Python{
 + Yamil recommended this book which helped him write in more standard/professional Python style: [“Beyond the Basic Stuff with Python / Al Sweigart”](https://inventwithpython.com/beyond/)
   + this section talks about how to better understand Python errors messages like “stack traces”
   + [Dealing With Errors And Asking For Help](https://inventwithpython.com/beyond/chapter1.html)
-+ We then talked about when to use the ```python try:  except:```
++ We then talked about when to use the `try:  except:`
   + Python syntax to catch exceptions, since folks often did not see try {...} being used a lot in other people code
   + some of us mentioned that we don’t use them all of the time but in some situations we always make sure to use them. For example, it is common to use try {...} when you are using a method that commonly raises exceptions.
   + Like in the Python Selenium module for writing “functional tests” for web pages. There are several Selenium methods that start with find_***() and can easily trigger an exception if what you are looking for in a webpage is not found. In this context I always use a try {...} statement around calls like find_element_by_css()
@@ -89,14 +89,12 @@ Rough and incomplete summary of topics covered today’s (2023-07-11) in Python{
   + this [chapter from the Beyond the Basic Stuff with Python” book](https://inventwithpython.com/beyond/chapter6.html), among many tips, includes how to use the built-in dictionary get() method that can be used to not accidentally trigger a KeyError exception when you try to access a Python dictionary’s key that does not actually exist
     + Writing Pythonic Code - Pythonic Ways to Use Dictionaries
     + using the get() dictionary method to avoid KeyError exceptions
+
   ```python
   my_dict = {'username': 'joe'}
-
   my_dict.get['password'] # raises KeyError exception
-
   my_dict.get('password', False) # simply returns False, or whatever is placed in the 2nd parameter of get()
   ```
-
 
 ### June 27, 2023
 + We talked about how the US PyCon (Python Conference) recently released their videos from their 2023 conference
