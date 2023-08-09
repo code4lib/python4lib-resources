@@ -83,6 +83,9 @@ by Kyran Dale](https://www.oreilly.com/library/view/data-visualization-with/9781
 + [HTTPX official docs](https://www.python-httpx.org/)
 #### Links checkers
 + [LinkChecker official documenation](https://linkchecker.github.io/linkchecker/)
+#### Retries
++ [stamina official docs](https://stamina.hynek.me/en/stable/index.html)
++ [tenacity offical docs](https://tenacity.readthedocs.io/en/latest/)
 
 ### Packaging
 #### Briefcase (packaging)
