@@ -71,6 +71,8 @@ by Kyran Dale](https://www.oreilly.com/library/view/data-visualization-with/9781
 + [Intro to Python: Pandas for Metadata Transformation and Cleanup / workshop by Michelle Janowiecki](https://mjanowiecki.github.io/intro-pandas-metadata/intro.html)
 + [Speedy pandas / Michelle Janowiecki](https://docs.google.com/presentation/d/1xRdNVonTxi9-gEsQkNvbF1e47o_2cuo1iimunoFUky4/edit#slide=id.p)
 + [All Pandas json_normalize() you should know for flattening JSON / B. Chen](https://towardsdatascience.com/all-pandas-json-normalize-you-should-know-for-flattening-json-13eae1dfb7dd)
+### Data Validators
++ [Pydantic official documentation](https://docs.pydantic.dev/latest/)
 
 ### GUI
 + [VisualTK](https://visualtk.com/) / (great starting point to visually create a GUI in Tkinter)
@@ -83,6 +85,9 @@ by Kyran Dale](https://www.oreilly.com/library/view/data-visualization-with/9781
 + [HTTPX official docs](https://www.python-httpx.org/)
 #### Links checkers
 + [LinkChecker official documenation](https://linkchecker.github.io/linkchecker/)
+#### Retries
++ [stamina official docs](https://stamina.hynek.me/en/stable/index.html)
++ [tenacity offical docs](https://tenacity.readthedocs.io/en/latest/)
 
 ### Packaging
 #### Briefcase (packaging)

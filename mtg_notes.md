@@ -1,4 +1,42 @@
-### July 8, 2023
+### August 8, 2023
+Our meet focused on [Pydantic](https://docs.pydantic.dev/latest/). Matt Lincoln from JSTOR Labs gave a brief intorduction into the tool and its uses.
+
+Matt used [this jupyter notebook](demo/pydantic.ipynb) to demo basic Pydantic syntax and validation functinality. 
+
++ Data validation can be done using Python type hints
++ Fast and extensible, Pydantic plays nicely with your linters/IDE/brain. Define how data should be in pure, canonical Python 3.7+; validate it with Pydantic.
++ We briefly talked about wanted to review how to create classes and objects in Python in a future meeting.
++ Pydantic can help with IDE / editor auto complete / auto suggest
++ Pydantic hasa a x.json() function/method to serialize data to JSON
++ great for writing APIs
++ Pydantic has a x.schema() method (which uses JSON schemas)
+    + the schema can then be used to create API documentation for using the API
++ [FastAPI](https://fastapi.tiangolo.com/) platform for Python based APIs uses Pedantic a lot
++ FYI: Pydantic version 2 is just coming out and some products/python modules that use Pydantic may still be not ready for version 2, but shoudl still support version 1
+we also briefly talked about Python’s built in “data classes”
++ “In Python, a data class is a class that is designed to only hold data values. They aren’t different from regular classes, but they usually don’t have any other methods. They are typically used to store information that will be passed between different parts of a program or a system.”
+  + https://docs.python.org/3/library/dataclasses.html
+  + https://realpython.com/python-data-classes/
+  + https://www.dataquest.io/blog/how-to-use-python-data-classes/
++ we talked about that Pydantic is not a replacement of “JSON Schemas”, that Pydantic is a complimentary tool
+  + https://json-schema.org/
+  + https://www.tutorialspoint.com/json/json_schema.htm
++ talked about Pydantic validators and their application
+  + https://docs.pydantic.dev/2.1/usage/validators/
+  + the less strict with lose rules
+  + then will do some clean up/transformation
+  + then switch to a more strict Pydantic validating class
++ we talked about briefly typing in Python in general, and how helpful it can be
+  + https://docs.python.org/3/library/typing.html
+  + https://realpython.com/lessons/type-hinting/
+  + https://towardsdatascience.com/12-beginner-concepts-about-type-hints-to-improve-your-python-code-90f1ba0ac49
+  + “Type hints are performed using Python annotations (introduced since PEP 3107). They are used to add types to variables, parameters, function arguments as well as their return values, class attributes, and methods. Adding type hints has no runtime effect: these are only hints and are not enforced on their own.”
+  + For example, in other languages that are strongly typed like C or C++, if you initially declare a variable as one type (e.g. string), you can’t just later on use it as another type (e.g. int) like we can do in Python
++ questions for Matt:
+  + is there any integration between pydantic and popular [ORMs](https://www.fullstackpython.com/object-relational-mappers-orms.html) (like [sqlalchemy](https://www.sqlalchemy.org/) for example)? Answer: yes, pydantic data classes should work well with most ORMs
+  + can pydantic validation features be useful in format crosswalks when we do not care about JSON output? Answer: yes, although in some cases more strict and detailed validation may be required. Still out of-the-box validiton in pydantic would be very useful in Matt's opinion
+
+### July 25, 2023
 + Rebecca:
   + Inventory tool to active scan vs. lists, processes, & jobs https://github.com/LibraryNinja/alma_inventory_utility/tree/main
   + Utilizes: pysimplegui, auto-py-to-exe
@@ -23,6 +61,40 @@
   + https://code.visualstudio.com now has a postman extension.
   + https://www.pythonanywhere.com/ helps host and run python in the cloud (from the Anaconda people)
   + https://www.git-tower.com/education/mac Gui for Git
+
+### July 11, 2023
+Rough and incomplete summary of topics covered today’s (2023-07-11) in Python{4}Lib group meeting
++ we talked about TAP - Text Analysis Pedagogy classes
+  + https://www.ithaka.org/constellate/text-analysis-pedagogy-institute/
++ Eric mentioned the Python Wagtail CMS built on top of the Python Django software dev sponsored by Google
+  + https://wagtail.org/
+  + https://www.djangoproject.com/
+  + Eric’s library moved off of Drupal by switching to Wagtail
++ We briefly talked about using https://gunicorn.org/ Python WSGI HTTP to serve Python software like Django, Flask
++ Eric also mentioned about a Python based institutional repository, and how it compared to the PHP based Islandora digital repository
+  + [InvenioRDM](https://inveniordm.docs.cern.ch)
++ we talked about using http://docopt.org/ instead of using the [Python built-in argparse module](https://docs.python.org/3/library/argparse.html) for parsing command line (CLI) parameters
++ We then talked about parsing ezproxy “audit” files with Python
++ then Eric shared a script that he created to parse a data file for the Koha ILS using docopt to parse the CLI parameters that are listed in the comments at the top of the file
+  + https://github.com/cca/koha_patron_import/blob/main/create_koha_csv.py
++ We talked about how to improve your coding style before posting you Python code on Github or on the internet.
++ Yamil recommended this book which helped him write in more standard/professional Python style: [“Beyond the Basic Stuff with Python / Al Sweigart”](https://inventwithpython.com/beyond/)
+  + this section talks about how to better understand Python errors messages like “stack traces”
+  + [Dealing With Errors And Asking For Help](https://inventwithpython.com/beyond/chapter1.html)
++ We then talked about when to use the `try:  except:`
+  + Python syntax to catch exceptions, since folks often did not see try {...} being used a lot in other people code
+  + some of us mentioned that we don’t use them all of the time but in some situations we always make sure to use them. For example, it is common to use try {...} when you are using a method that commonly raises exceptions.
+  + Like in the Python Selenium module for writing “functional tests” for web pages. There are several Selenium methods that start with find_***() and can easily trigger an exception if what you are looking for in a webpage is not found. In this context I always use a try {...} statement around calls like find_element_by_css()
+  + there is of course a lot more that can be said of when to use try {...} in your Python code
+  + this [chapter from the Beyond the Basic Stuff with Python” book](https://inventwithpython.com/beyond/chapter6.html), among many tips, includes how to use the built-in dictionary get() method that can be used to not accidentally trigger a KeyError exception when you try to access a Python dictionary’s key that does not actually exist
+    + Writing Pythonic Code - Pythonic Ways to Use Dictionaries
+    + using the get() dictionary method to avoid KeyError exceptions
+
+  ```python
+  my_dict = {'username': 'joe'}
+  my_dict.get['password'] # raises KeyError exception
+  my_dict.get('password', False) # simply returns False, or whatever is placed in the 2nd parameter of get()
+  ```
 
 ### June 27, 2023
 + We talked about how the US PyCon (Python Conference) recently released their videos from their 2023 conference
