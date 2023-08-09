@@ -62,6 +62,42 @@ we also briefly talked about Python’s built in “data classes”
   + https://www.pythonanywhere.com/ helps host and run python in the cloud (from the Anaconda people)
   + https://www.git-tower.com/education/mac Gui for Git
 
+### July 11, 2023
+Rough and incomplete summary of topics covered today’s (2023-07-11) in Python{4}Lib group meeting
++ we talked about TAP - Text Analysis Pedagogy classes
+  + https://www.ithaka.org/constellate/text-analysis-pedagogy-institute/
++ Eric mentioned the Python Wagtail CMS built on top of the Python Django software dev sponsored by Google
+  + https://wagtail.org/
+  + https://www.djangoproject.com/
+  + Eric’s library moved off of Drupal by switching to Wagtail
++ We briefly talked about using https://gunicorn.org/ Python WSGI HTTP to serve Python software like Django, Flask
++ Eric also mentioned about a Python based institutional repository, and how it compared to the PHP based Islandora digital repository
+  + [InvenioRDM](https://inveniordm.docs.cern.ch)
++ we talked about using http://docopt.org/ instead of using the [Python built-in argparse module](https://docs.python.org/3/library/argparse.html) for parsing command line (CLI) parameters
++ We then talked about parsing ezproxy “audit” files with Python
++ then Eric shared a script that he created to parse a data file for the Koha ILS using docopt to parse the CLI parameters that are listed in the comments at the top of the file
+  + https://github.com/cca/koha_patron_import/blob/main/create_koha_csv.py
++ We talked about how to improve your coding style before posting you Python code on Github or on the internet.
++ Yamil recommended this book which helped him write in more standard/professional Python style: [“Beyond the Basic Stuff with Python / Al Sweigart”](https://inventwithpython.com/beyond/)
+  + this section talks about how to better understand Python errors messages like “stack traces”
+  + [Dealing With Errors And Asking For Help](https://inventwithpython.com/beyond/chapter1.html)
++ We then talked about when to use the ```python try:  except:```
+  + Python syntax to catch exceptions, since folks often did not see try {...} being used a lot in other people code
+  + some of us mentioned that we don’t use them all of the time but in some situations we always make sure to use them. For example, it is common to use try {...} when you are using a method that commonly raises exceptions.
+  + Like in the Python Selenium module for writing “functional tests” for web pages. There are several Selenium methods that start with find_***() and can easily trigger an exception if what you are looking for in a webpage is not found. In this context I always use a try {...} statement around calls like find_element_by_css()
+  + there is of course a lot more that can be said of when to use try {...} in your Python code
+  + this [chapter from the Beyond the Basic Stuff with Python” book](https://inventwithpython.com/beyond/chapter6.html), among many tips, includes how to use the built-in dictionary get() method that can be used to not accidentally trigger a KeyError exception when you try to access a Python dictionary’s key that does not actually exist
+    + Writing Pythonic Code - Pythonic Ways to Use Dictionaries
+    + using the get() dictionary method to avoid KeyError exceptions
+  ```python
+  my_dict = {'username': 'joe'}
+
+  my_dict.get['password'] # raises KeyError exception
+
+  my_dict.get('password', False) # simply returns False, or whatever is placed in the 2nd parameter of get()
+  ```
+
+
 ### June 27, 2023
 + We talked about how the US PyCon (Python Conference) recently released their videos from their 2023 conference
   + [2023 sessions youtube channel](https://www.youtube.com/watch?v=eZwHvBsoPn4&list=PL2Uw4_HvXqvY2zhJ9AMUa_Z6dtMGF3gtb)
