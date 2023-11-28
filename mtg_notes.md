@@ -1,3 +1,42 @@
+### November 14, 2023
++ We talked about the MARC21 standard, how each record has a max size of 99,999 bytes/octets, and that individual fields can only have a maximum of 9,999 bytes/octets in size
+https://www.loc.gov/marc/specifications/specrecstruc.html
++ I then shared a Python pymarc snippet that inspired this size talk, that processed a large 80k record MARCXML file export to find if any individual records were larger than 99,999 bytes/octets
+https://pymarc.readthedocs.io/en/latest/
++ I was happy to find a convenient pymarc method that reads in MARCXML files and returns a Python list of individual pymarc records
+```python
+records = pymarc.marcxml.parse_xml_to_array('myfile.xml')
+```
++ though this method loads all data in RAM and could seriously impact your computer performance if you don’t have a lot of RAM available
+there are other functions and approaches to only load a few XML records at a time
+the resulting code found 4 records in our data
+then there was a question about how hard it is to use pymarc to analyze subject data in a batch of records
+we then shared a few more examples of how simple it can be to use pymarc
+and how general knowledge of Python concepts like looping through lists and using conditional statements goes a long way to make it easy to use pymarc
+see image of Eric’s example of using pymarc code that was shared
+
+![marc1](media/marc1.png)
+
+![marc2](media/marc2.png)
+
++ Rebecca had a question about properly creating a graph using Google Colab, Pandas, and plotly.
+  + https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_values.html
+  + https://pandas.pydata.org/
+  + https://plotly.com/python/
+  
++ Rebecca was hosting her code on Google Colab, which is a way to run Jupyter notebooks on a shared site that you can then share with others
+https://research.google.com/colaboratory/
+https://jupyter.org/
++ we briefly spoke about that we should avoid using regular expressions when processing XML data
+and we should instead use a Python module that are specifically designed for processing XML
+here are some short post with some comments on why we should avoid using regex with XML
+  + https://medium.com/thecyberfibre/stop-parsing-x-html-with-regular-expression-2cf13215b411
+   + https://stackoverflow.com/questions/8577060/why-is-it-such-a-bad-idea-to-parse-xml-with-regex
++ Here are some examples of python modules that are meant to handle XML
+  + [ElementTree XML API](https://docs.python.org/3/library/xml.etree.elementtree.html) 
+  + [this one is built-in to Python BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)
+  + this one is usually used for parsing HTML but can handle XML [lxml](https://lxml.de/)
+
 ### August 8, 2023
 Our meet focused on [Pydantic](https://docs.pydantic.dev/latest/). Matt Lincoln from JSTOR Labs gave a brief intorduction into the tool and its uses.
 
