@@ -72,6 +72,11 @@ here are some short post with some comments on why we should avoid using regex w
   + This group may have a future session to demonstrate PySimpleGUI
   + Tomasz asked if folks knew about Python tools for “transliteration” of Non-Latin text
     + A graph-based transliteration tool: https://github.com/seanpue/graphtransliterator
++ We went back to talking about tools for local development
+  + Here is an image that I found through my local (Boston) Python meet up, of all the tools that can be used for setting up your code...
+    + for virtual environments, for creating packages, for multiple python versions, etc. https://cdn.fosstodon.org/media_attachments/files/110/741/748/598/833/261/small/13d5e21803357140.png
+    + It is a bit overwhelming
+    + Here is a presentation where this image was taken from uploaded this summer covering a lot of the possible tools that can be used… https://youtu.be/MsJjzVIVs6M
 
 ### October 3rd, 2023
 ...
