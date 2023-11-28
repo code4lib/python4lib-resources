@@ -53,6 +53,26 @@ here are some short post with some comments on why we should avoid using regex w
 + John Pillbeam linked to the courses/workshops at constellate.org/events.
 + John P. Linked to another course by one of the constellate devs. Currently going through this free online course/textbook that one of the Constellate trainers created: https://pandas.pythonhumanities.com/
 
+### October 17th, 2023
++ we talked about [FRBR](https://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records)
+  + Talked about record-rollups
++ Susan mentioned that she started working through Adam Emery’s “Learn Python” tutorials.
++ Eric has recently liked working with the [Spacy site to learn about Natural Language Processing (NLP)](https://course.spacy.io/en)
++ Yamil liked the tutorials that this site has, since you can run examples right on their site without having to install anything locally
++ Susan later asked if they should use a locally installed version of Python or use Jupyter notebooks for her first real project
+  + John: the consensus that it is better to have a locally installed version
+  + though Jupyter notebooks or Google Colab can be great to practice or prototype things
++ “I just discovered this via that Glyph blog post - an updater for the python.org Mac installer: https://mopup.readthedocs.io/en/latest/
++ David shared a free online Python tutorial:
+  + https://learn-python.adamemery.dev/
+  + Other more advanced suggestions included
++ using [pyenv](https://github.com/pyenv/pyenv) to easily manage having more than one version of Python on yourhcieh
++ a few people mentioned that they are liking using [Poetry](https://python-poetry.org/) for “packaging and dependency management”
++ John D. mentioned: “Just finished the official [PySimpleGUI](https://www.pysimplegui.org/en/latest/) Udemy course and created my first graphical utility which has been fun”
+  + This group may have a future session to demonstrate PySimpleGUI
+  + Tomasz asked if folks knew about Python tools for “transliteration” of Non-Latin text
+    + A graph-based transliteration tool: https://github.com/seanpue/graphtransliterator
+
 ### August 8, 2023
 Our meet focused on [Pydantic](https://docs.pydantic.dev/latest/). Matt Lincoln from JSTOR Labs gave a brief intorduction into the tool and its uses.
 
