@@ -98,7 +98,40 @@ here are some short post with some comments on why we should avoid using regex w
 + John Pillbeam mentioned the incubator for finding concepts that may not be included in main lesson plans yet.
 
 ### September 19th, 2023
-...
++ Ben asked how to tell others that say they want to use Python with AI, specifically with the chatGPT API
+  + We spoke how there is some ability to run some API calls for free for version 3.5, though there is a cost for running API calls for the 4.x version
+  + It was mentioned about the pricing for Hugging Face https://huggingface.co/pricing as an alternative
+  + From David: Hugging Face also has a variety of tags around different areas of AI. So there’s the Natural Language Processing stuff, but ChatGPT is the big player there. But things like object detection and audio tools are there.
+  + Yamil suggested running tutorials of the https://scikit-learn.org/stable/
+    + Simple and efficient tools for predictive data analysis
+    + Accessible to everybody, and reusable in various contexts
+    + Built on NumPy, SciPy, and matplotlib
+    + Open source, commercially usable - BSD license
+  + Recent post from Simon Willison on Python and OpenAI tools: https://simonwillison.net/2023/Sep/12/llm-clip-and-chat/
+  + We talked about concerns on the AI hype and over reliance of AI.
+  + We very briefly spoke about NLP - Natural Language Processing., and how that is just a small part of the “engine” that is a platform like chatGPT
+    + to try to learn NLP I ran some tutorials using the python module https://spacy.io/
+    + spaCy is a free, open-source library for advanced Natural Language Processing(NLP) in Python.
+    + If you’re working with a lot of text, you’ll eventually want to know more about it. For example, what’s it about? What do the words mean in context? ”
++ We spoke about Charle’s new repository with exercises to learn python skills
+  + https://github.com/UMiamiLibraries/python4lib-python-exercises/blob/main/README.md
+  + Charles is looking for collaborators
++ Tomasz talked about about issues with being a organizational customer of Naxos, which is a streaming audio/video content
+  + For example, how to make sure the catalog is serving the correct sets of valid MARC files with also valid 856 tags that lead to the content
+  + Here is a presentation on the pitfalls of keeping your holdings in sync with vendors
+  + [Everything is Broken, but by How Much Exactly (video)?](https://phette.net/prez/everything-is-broken) [(slides)](https://phette23.github.io/everything-is-broken/#/)
+  + Tomasz would like to see if he can use Python to automate the process of keeping the holdings in sync. Meaning that MAC records for content that is no longer available via Naxos is deleted from the catalog in a timely manner
+    + For example, doing some analysis with Pandas
++ Kate wrote:
+  + Once we migrate to our new ILS (Symphony), we will eventually (hopefully!) start using their eResource Central system for all our eContent and be able to do away with MARC records for eContent. But for now we use a combination of extracting batches of records in order to use MarcEdit’s link checker or other link checkers, or just periodically wiping out all our MARC records for a particular vendor and loading a new batch from the vendor for all our holdings
+  + We’re about to do that now with Axis 360 since they’ve switched to “Boundless”. We have over 30,000 MARC records for Axis 360, so just too much to handle
+  + Mentioned the issues of trying to fix issues, in the large vendor MARC records that need to be added to our catalogs. For example, like misspellings or bad records
++ We spoke about about the limitations of licensing content from Naxos (or similar vendors) versus actually storing that content locally
++ Briefly mentioned the ongoing “Internet Archive lawsuit”
++ Here is an article about the lawsuit it that is a few weeks old
+This is an article from the New York Times that is several weeks old about the lawsuit
+a key quote from the article that we talked about
+“Libraries came before publishers,” the 62-year-old librarian said in a recent interview in the former Christian Science church in western San Francisco that houses the archive. “We came before copyright. But publishers now think of libraries as customer service departments for their database products.”
 
 ### September 5th, 2023
 ...
