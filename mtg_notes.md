@@ -134,7 +134,41 @@ a key quote from the article that we talked about
 “Libraries came before publishers,” the 62-year-old librarian said in a recent interview in the former Christian Science church in western San Francisco that houses the archive. “We came before copyright. But publishers now think of libraries as customer service departments for their database products.”
 
 ### September 5th, 2023
-...
++ Charles showed some code that batch creates APA & AMA citations
++ Carlos wanted feedback on how to add small improvements to their code that creates citations
+  + for example, when then there is no volume number for a citation, how to elegantly not add a volume number
++ someone suggested to to use Python 3.10's “case” functionality that is formally called: “Structural Pattern Matching”
+  + this feature was added Python 3.10 in PEP636 https://peps.python.org/pep-0636/
++ we briefly talked about how PEP stands for “Python Enhancement Request”
++ Here is a site with a brief explanation on how to use “Structural Pattern Matching” in Python 3.10
+https://realpython.com/python310-new-features/#structural-pattern-matching
++ Eduardo, who works with Charles, mentioned that they are trying to figure out how to encode that some parts of the citation have to be in italic when using Pandas to batch create citations
++ Tom has this suggestion for dealing with citation data
+  + If you want to play with bibtex files to manage your citations instead of excel, you could possibly use this https://github.com/caltechlibrary/pybtex-apa7-style
+  + https://github.com/cproctor/pybtex-apa7-style/blob/master/formatting/apa.py
++ Yamil talked about using “unittest” for a pre-existing python code base, but mentioned that you can keep older tests as unittest style and just add new tests that use pytest
+  + [Info on Python built-in unittest module](https://docs.python.org/3/library/unittest.html)
+  + versus the non-built in [pytest module](https://docs.pytest.org/en/7.4.x/) also for “unit tests”
++ we talked about “Library Carpentry” classes and how helpful they have been. They can cover various topics, including Python
+  + https://librarycarpentry.org/index.html
+  + “Library Carpentry focuses on building software and data skills within library and information-related communities. Our goal is to empower people in these roles to use software and data in their own work and to become advocates for and train others in efficient, effective and reproducible data and software practices. Our workshops are based on our lessons. ”
+  + The [umbrella organization for Library Carpentry](https://carpentries.org/index.html)includes: Data Carpentry and Software Carpentry
++ Yamil was asked to briefly speak about a session at the Open Library Foundation’s (OLF) conference (WOLFCon) that covered the FOLIO ILS and the use of Python for post migration clean up by folks at Wellesley
+  + https://github.com/wellesleyfolio/WOLFcon_2023
+  + here are more links for Python FOLIO tools/modules
+    + https://github.com/FOLIO-FSE/folioclient
+    + https://github.com/folio-org/folio-tools
++ this site was suggested for improving your Python skills, but other programming languages are supported
+  + https://exercism.org/
++ we spoke about Python community’s preferred writing style versus Ruby’s
++ We spoke about PEP8, which is the main Python style guide
+  + [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/)
+  + Here is a Python module to check if your code follows PEP8 without making changes
+https://pycodestyle.pycqa.org/en/latest/
++ spoke about [Black](https://black.readthedocs.io/en/stable/), which can be used to change your code to match PEP8
+  + “Black: The uncompromising code formatter”
+  + We spoke about how the Pycharm Python editor is great about reminding you to follow PEP8 when you write your code and to also give the option to automatically reformat individual code snippets to follow PEP8, instead of just reformatting all of your code
+  + Yamil also mentioned how I have opened up existing Python codebases in Pycharm, and the Pycharm indexer has found many hidden bugs in code that had never run or code that had logic flaws
 
 ### August 22, 2023
 ...
