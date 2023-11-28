@@ -37,6 +37,22 @@ here are some short post with some comments on why we should avoid using regex w
   + [this one is built-in to Python BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)
   + this one is usually used for parsing HTML but can handle XML [lxml](https://lxml.de/)
 
+### October 31st, 2023
++ Introductions, refreshing memories of returning attendees and new attendees; common threads from intros:
+  + Alma
+  + OCLC API (APIs in general)
+  + Archivespace
++ John Dewees Question on CSVs - Generally how big is too big for python to handle CSVs? Is there a moment where something is too big to be ingested and handled properly?
++ John Pillbeam mentioned SQLite might work well here which is sort of a file on disk and is adaptable for quite a bit of operations.
++ Bruce Orcutt mentioned SQLite might be the best way to go as well, though think of the upfront maintenance.
++ Paul Clough mentioned you may need an Object Relational Mapping (ORM) in front of the SQLite. It helps translate between the application and its needs (abstracts it out.)
++ Emily Frazier mentioned using a python script which loads 8 million rows of a TSV into pandas. It worked but was a bit slow.
++ Rebecca Hyams mentioned an Alma project which helps draw out certain elements of MARC data. You can get really granular from API. ENUG Presentations including Rebecca’s presentation on item/inventory and PySimpleGUI
++ Comments about documenting projects. Susan mentioned good comments in code and a narrative of it in a separate word doc.
++ Constellate was asked after by Bruce.
++ John Pillbeam linked to the courses/workshops at constellate.org/events.
++ John P. Linked to another course by one of the constellate devs. Currently going through this free online course/textbook that one of the Constellate trainers created: https://pandas.pythonhumanities.com/
+
 ### August 8, 2023
 Our meet focused on [Pydantic](https://docs.pydantic.dev/latest/). Matt Lincoln from JSTOR Labs gave a brief intorduction into the tool and its uses.
 
