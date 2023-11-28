@@ -73,6 +73,18 @@ here are some short post with some comments on why we should avoid using regex w
   + Tomasz asked if folks knew about Python tools for “transliteration” of Non-Latin text
     + A graph-based transliteration tool: https://github.com/seanpue/graphtransliterator
 
+### October 3rd, 2023
+...
+
+### September 19th, 2023
+...
+
+### September 5th, 2023
+...
+
+### August 22, 2023
+...
+
 ### August 8, 2023
 Our meet focused on [Pydantic](https://docs.pydantic.dev/latest/). Matt Lincoln from JSTOR Labs gave a brief intorduction into the tool and its uses.
 
