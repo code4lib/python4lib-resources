@@ -171,7 +171,7 @@ https://pycodestyle.pycqa.org/en/latest/
   + Yamil also mentioned how I have opened up existing Python codebases in Pycharm, and the Pycharm indexer has found many hidden bugs in code that had never run or code that had logic flaws
 
 ### August 22, 2023
-...
+... missing ... :sob:
 
 ### August 8, 2023
 Our meet focused on [Pydantic](https://docs.pydantic.dev/latest/). Matt Lincoln from JSTOR Labs gave a brief intorduction into the tool and its uses.
