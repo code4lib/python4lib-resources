@@ -129,7 +129,7 @@ here are some short post with some comments on why we should avoid using regex w
 + We spoke about about the limitations of licensing content from Naxos (or similar vendors) versus actually storing that content locally
 + Briefly mentioned the ongoing “Internet Archive lawsuit”
 + Here is an article about the lawsuit it that is a few weeks old
-This is an article from the New York Times that is several weeks old about the lawsuit
+This is an [article from the New York Times](https://www.nytimes.com/2023/08/13/business/media/internet-archive-emergency-lending-library.html?unlocked_article_code=wcOmLYkdU__rOiiM6CNfze5OdE8Y4h41_rWZGFXrGdG-380Ng1Dkw0URPeZyTdFWmVYedUOlhz1hQFujukvNfw6un9L-aR5-AXLvbT4yWNv_tPLhfkj0Ou344H0i50355VZDbp5Uv9U6xLKJrJGh7WRZ-Vi6WbWosiHTpN7j-qR60P1SUSZn9nweYhFky5gIPNubaGpsUrRt3V1ZbzqG_aQMpfqbQSjFZamJkm84kzV_bqbbDB1q370gK6OkBDZbrBifM0fTKnqQaVItqvokBYaeEExJsRMugQQlJiKInxc7V44Cg5xK0piv3Q6ulQj1V1i2QYsbQGgSQwjv_bzTmknPkPRHMkfI9Uf2jdYqM5GHRn9zwqk9tvqXTw&smid=url-share) that is several weeks old about the lawsuit
 a key quote from the article that we talked about
 “Libraries came before publishers,” the 62-year-old librarian said in a recent interview in the former Christian Science church in western San Francisco that houses the archive. “We came before copyright. But publishers now think of libraries as customer service departments for their database products.”
 
