@@ -1,3 +1,90 @@
+### November 14, 2023
++ We talked about the MARC21 standard, how each record has a max size of 99,999 bytes/octets, and that individual fields can only have a maximum of 9,999 bytes/octets in size
+https://www.loc.gov/marc/specifications/specrecstruc.html
++ I then shared a Python pymarc snippet that inspired this size talk, that processed a large 80k record MARCXML file export to find if any individual records were larger than 99,999 bytes/octets
+https://pymarc.readthedocs.io/en/latest/
++ I was happy to find a convenient pymarc method that reads in MARCXML files and returns a Python list of individual pymarc records
+```python
+records = pymarc.marcxml.parse_xml_to_array('myfile.xml')
+```
++ though this method loads all data in RAM and could seriously impact your computer performance if you don’t have a lot of RAM available
+there are other functions and approaches to only load a few XML records at a time
+the resulting code found 4 records in our data
+then there was a question about how hard it is to use pymarc to analyze subject data in a batch of records
+we then shared a few more examples of how simple it can be to use pymarc
+and how general knowledge of Python concepts like looping through lists and using conditional statements goes a long way to make it easy to use pymarc
+see image of Eric’s example of using pymarc code that was shared
+
+![marc1](media/marc1.png)
+
+![marc2](media/marc2.png)
+
++ Rebecca had a question about properly creating a graph using Google Colab, Pandas, and plotly.
+  + https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_values.html
+  + https://pandas.pydata.org/
+  + https://plotly.com/python/
+  
++ Rebecca was hosting her code on Google Colab, which is a way to run Jupyter notebooks on a shared site that you can then share with others
+https://research.google.com/colaboratory/
+https://jupyter.org/
++ we briefly spoke about that we should avoid using regular expressions when processing XML data
+and we should instead use a Python module that are specifically designed for processing XML
+here are some short post with some comments on why we should avoid using regex with XML
+  + https://medium.com/thecyberfibre/stop-parsing-x-html-with-regular-expression-2cf13215b411
+   + https://stackoverflow.com/questions/8577060/why-is-it-such-a-bad-idea-to-parse-xml-with-regex
++ Here are some examples of python modules that are meant to handle XML
+  + [ElementTree XML API](https://docs.python.org/3/library/xml.etree.elementtree.html) 
+  + [this one is built-in to Python BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)
+  + this one is usually used for parsing HTML but can handle XML [lxml](https://lxml.de/)
+
+### October 31st, 2023
++ Introductions, refreshing memories of returning attendees and new attendees; common threads from intros:
+  + Alma
+  + OCLC API (APIs in general)
+  + Archivespace
++ John Dewees Question on CSVs - Generally how big is too big for python to handle CSVs? Is there a moment where something is too big to be ingested and handled properly?
++ John Pillbeam mentioned SQLite might work well here which is sort of a file on disk and is adaptable for quite a bit of operations.
++ Bruce Orcutt mentioned SQLite might be the best way to go as well, though think of the upfront maintenance.
++ Paul Clough mentioned you may need an Object Relational Mapping (ORM) in front of the SQLite. It helps translate between the application and its needs (abstracts it out.)
++ Emily Frazier mentioned using a python script which loads 8 million rows of a TSV into pandas. It worked but was a bit slow.
++ Rebecca Hyams mentioned an Alma project which helps draw out certain elements of MARC data. You can get really granular from API. ENUG Presentations including Rebecca’s presentation on item/inventory and PySimpleGUI
++ Comments about documenting projects. Susan mentioned good comments in code and a narrative of it in a separate word doc.
++ Constellate was asked after by Bruce.
++ John Pillbeam linked to the courses/workshops at constellate.org/events.
++ John P. Linked to another course by one of the constellate devs. Currently going through this free online course/textbook that one of the Constellate trainers created: https://pandas.pythonhumanities.com/
+
+### October 17th, 2023
++ we talked about [FRBR](https://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records)
+  + Talked about record-rollups
++ Susan mentioned that she started working through Adam Emery’s “Learn Python” tutorials.
++ Eric has recently liked working with the [Spacy site to learn about Natural Language Processing (NLP)](https://course.spacy.io/en)
++ Yamil liked the tutorials that this site has, since you can run examples right on their site without having to install anything locally
++ Susan later asked if they should use a locally installed version of Python or use Jupyter notebooks for her first real project
+  + John: the consensus that it is better to have a locally installed version
+  + though Jupyter notebooks or Google Colab can be great to practice or prototype things
++ “I just discovered this via that Glyph blog post - an updater for the python.org Mac installer: https://mopup.readthedocs.io/en/latest/
++ David shared a free online Python tutorial:
+  + https://learn-python.adamemery.dev/
+  + Other more advanced suggestions included
++ using [pyenv](https://github.com/pyenv/pyenv) to easily manage having more than one version of Python on yourhcieh
++ a few people mentioned that they are liking using [Poetry](https://python-poetry.org/) for “packaging and dependency management”
++ John D. mentioned: “Just finished the official [PySimpleGUI](https://www.pysimplegui.org/en/latest/) Udemy course and created my first graphical utility which has been fun”
+  + This group may have a future session to demonstrate PySimpleGUI
+  + Tomasz asked if folks knew about Python tools for “transliteration” of Non-Latin text
+    + A graph-based transliteration tool: https://github.com/seanpue/graphtransliterator
+
+### October 3rd, 2023
+...
+
+### September 19th, 2023
+...
+
+### September 5th, 2023
+...
+
+### August 22, 2023
+...
+
 ### August 8, 2023
 Our meet focused on [Pydantic](https://docs.pydantic.dev/latest/). Matt Lincoln from JSTOR Labs gave a brief intorduction into the tool and its uses.
 
