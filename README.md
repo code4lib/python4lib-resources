@@ -4,10 +4,10 @@ Shared space for the Python{4}Lib group.
 See our [meeting notes](mtg_notes.md) for more details.
 
 Upcoming meetings (meetings at 11am Eastern time):
-+ November 28th, 2023
 + December 12th, 2023
 + January 9th, 2024
 + January 23rd, 2024
++ February 6th, 2024
 
 Would like to suggest a worthy resource? See [contributing instructions](CONTRIBUTING.md).
 
@@ -64,6 +64,7 @@ Would like to suggest a worthy resource? See [contributing instructions](CONTRIB
 + [Aksharamukha](https://github.com/virtualvinodh/aksharamukha-python) - transliteration of 120 Indic languages
 + [ArabicTransliterator](https://github.com/MTG/ArabicTransliterator) - ALA-LC transliteration tool for Arabic
 + [cyrillic-transliteration](https://github.com/opendatakosovo/cyrillic-transliteration) - bi-directional transliteration of Cyrillic script to Latin script and vice versa
++ [graphtransliterator](https://github.com/seanpue/graphtransliterator)
 
 ### Data Analysis
 #### Pandas
