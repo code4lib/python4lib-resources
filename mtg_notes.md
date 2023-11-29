@@ -1,3 +1,33 @@
+### November 28, 2023
+Michael Benowitz, a Tech Lead at the NYPL, gave a presentation on Airflow.
+"[Apache Airflow](https://airflow.apache.org/) is a platform created by the community to programmatically author, schedule and monitor workflows.”
+Link to slides will be forthcoming, I will include screenshots of a few of the slides in the meantime.
++ [Wikipedia article on Airflow](https://en.wikipedia.org/wiki/Apache_Airflow)
++ It is a free and open source product, but typically needs to run on a central VM/server for production use. Instead of just running on your own workstation. There are “cloud” providers for handling the hosting for you.
++ Airflow can be part of an [ETL workflow](https://en.wikipedia.org/wiki/Extract,_transform,_load)
++ Airflow can be easy to schedule compared to older tools like [cron](https://en.wikipedia.org/wiki/Cron), and it comes with a GUI
+
+Airflow cloud options:
++ https://aws.amazon.com/managed-workflows-for-apache-airflow/pricing/
++ https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/data-factory/how-does-managed-airflow-work.md
++ Astronomer
++ DAGster
+
+Additional technologies used and/or mentioned:
++ https://en.wikipedia.org/wiki/Kubernetes
++ https://www.sqlalchemy.org/
++ https://docs.pydantic.dev/latest/
++ https://newrelic.com/ - has a way to give free “seats” to certain non-profit organizations
++ https://en.wikipedia.org/wiki/AWS_Lambda
+
+Screenshots of Mike's presenations:
+![airflow1](media/airflow1.png)
+![airflow2](media/airflow2.png)
+![airflow3](media/airflow3.png)
+![airflow4](media/airflow4.png)
+![airflow5](media/airflow5.png)
+![airflow7](media/airflow7.png)
+
 ### November 14, 2023
 + We talked about the MARC21 standard, how each record has a max size of 99,999 bytes/octets, and that individual fields can only have a maximum of 9,999 bytes/octets in size
 https://www.loc.gov/marc/specifications/specrecstruc.html
