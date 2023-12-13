@@ -1,3 +1,56 @@
+### December 13, 2023
+We briefly talked about [“for … else” construct](https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops) that was recently mentioned in the #python Slack channel
++ I have only used it once, but I was very confused the first time I saw it
+
+“This is a summary of what features appeared in which versions of Python.”
++ https://nedbatchelder.com/text/which-py.html
++ I found this page very helpful, it is created by the maintainer of the [coverage.py](https://coverage.readthedocs.io/) Python module
+
+We talked about using Google Colab as a way to try to run a python script with more resources than on your local machine. For example, you may be able to tap into GPUs with Google Colab.
++ “Colab is a hosted Jupyter Notebook service that requires no setup to use and provides free access to computing resources, including GPUs and TPUs.”
+
+Someone asked about running Python or non-Python projects on Digital Ocean, some have used it and were happy with them. I use the Digital Ocean help docs for Unix/shell and even Python topics quite often
++ John: “I’m not sure about now, but a few years ago Digital Ocean did some good free webinars on Django and Flask. The instructors really knew a lot about deploying Python on DO.”
+  + [Getting Started with Flask](https://www.digitalocean.com/community/tech-talks/getting-started-with-flask)
+  + [Deploying your Python Applications](https://www.digitalocean.com/community/tech-talks/deploying-your-python-applications)
+
+Daniel talked briefly about a new project called [jupyter-ai](https://github.com/jupyterlab/jupyter-ai) (and gave a live demo)
+
+We spoke about doing quick python tests or experiments with a local Jupyter notebook
++ Another alternative for doing quick local tests or to run interactive commands for production use is iPython. Which is the code base that was the foundation of Jupiter Notebooks
++ https://ipython.readthedocs.io/en/stable/index.html
+
+Book suggestion from John:
++ I’ve just started this book to try and build more programming practice into my workday: [Python Workout: 50 ten-minute exercises](https://www.manning.com/books/python-workout)
++ It’s included on O’Reilly if you have an institutional subscription.
+
+On the topic of new things we have tried lately
++ I finally started using the [coverage.py](https://coverage.readthedocs.io/) Python module
++ “Coverage.py is a tool for measuring code coverage of Python programs. It monitors your program, noting which parts of the code have been executed, then analyzes the source to identify code that could have been executed but was not.”
+
+We spoke about coming up with new years python learning resolutions, or 7 days of code challenge
+
+Also the group was asked if we should continue to have a mix of scheduled presentations and free chat time
++ the group would like to keep this mix
+
+We talked about John’s earlier idea (from Slack) about finding if there any Python related presentations meant for Code4lib that were not accepted (or accepted) that could be given during this Python group meetings for those that cannot attend Code4lib
+
+Tomasz mentioned how he suddenly found out that `distutils` (https://docs.python.org/3.10/library/distutils.html) was removed from the new Python 3.12 release
++ “`distutils` is deprecated with removal planned for Python 3.12. See the What’s New entry for more information.”
++ we talked a bit about how Python does remove features, but it tries to give “deprecation warnings” and a year or so before a feature/module is removed
++ “You get what you pay for” reminds me of this: https://xkcd.com/2347
+  + Susan: That xkcd reminds me of the node.js/javascript library whose developer yanked it from all the public repos a few years back, and it broke basically everything. Was it underscore?
+    + [left-pad](https://qz.com/646467/how-one-programmer-broke-the-internet-by-deleting-a-tiny-piece-of-code)
+
+
+The removal of that distutils module led to a discussion about [Python virtual environments](https://realpython.com/python-virtual-environments-a-primer/) (also known as a venv which is the Python built-in module’s name)
++ by default the virtual environment works with whatever is the single python version is installed on your OS
++ you still need to set up separate python version (and there are multiple ways for that[1]) to have a virtual environment and also have it run a different version of Python locally
+ + these are 2 ways (of several) to have more than one version of Python with tricks like
+ + https://github.com/pyenv/pyenv
+ + Docker
++ this group may have a future presentation on Python virtual environments (Yamil and Charlotte agreed to present on the topic)
+
 ### November 28, 2023
 Michael Benowitz, a Tech Lead at the NYPL, gave a presentation on Airflow.
 "[Apache Airflow](https://airflow.apache.org/) is a platform created by the community to programmatically author, schedule and monitor workflows.”
