@@ -19,6 +19,7 @@ Would like to suggest a worthy resource? See [contributing instructions](CONTRIB
 ### Books
 + [Automate the Boring Stuff with Python : practical programming for total beginners / Al Sweigart](https://worldcat.org/title/1128094127)
 + [Python crash course : a hands-on, project based introduction to programming / Eric Matthes](https://search.worldcat.org/title/1350635022)
++ [Python workout: 50 ten-minute exercises / Reuven M. Lerner](https://search.worldcat.org/title/1121083840)
 + [Effective Python: 59 Ways to Write Better Python / Brett Slatkin](https://www.worldcat.org/title/1140129622)
 + [Pandas for everyone: Python data analysis / Daniel Y. Chen](https://worldcat.org/en/title/1240309883)
 + [Data Visualization with Python and JavaScript, 2nd Editionby Kyran Dale](https://www.oreilly.com/library/view/data-visualization-with/9781098111861/)
