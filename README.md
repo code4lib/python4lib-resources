@@ -4,9 +4,9 @@ Shared space for the Python{4}Lib group.
 See our [meeting notes](mtg_notes.md) for more details.
 
 Upcoming meetings (meetings at 11am Eastern time):
-+ January 9th, 2024
 + January 23rd, 2024
 + February 6th, 2024
++ February 20th, 2024
 
 Would like to suggest a worthy resource? See [contributing instructions](CONTRIBUTING.md).
 

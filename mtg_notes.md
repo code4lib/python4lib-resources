@@ -1,3 +1,34 @@
+### January 9, 2023
+John Dewees, DAM Lead at the University of Rochester, gave a presentation on the pax-opex-utility
+[pax-opex-utility](https://github.com/rochester-rcl/pax-opex-utility) is "a graphical utility to format PAX objects and OPEX metadata for ingest into Preservica as SIPs to be synced with ArchivesSpace" 
++ He used a PySimpleGUI utility to create a Windows executable
+  + https://www.pysimplegui.org/en/latest/
+  + the pax-opex-utility only works on Windows at this time
+  + from David E.:
+    + One thought on implementing on Mac vs. PC: I think there are different pathing formats/norms to follow. Depending on users they may need to make some adjustments if certain paths are hard coded. (I’ve made that an issue for myself by cleverly coding between a laptop and work PC.)
++ someone asked about libraries that can be used to package up assets for Archivematica and libraries that can be used to work with metadata in ArchivesSpace
+  + someone else shared [ArchivesSnake](https://github.com/archivesspace-labs/ArchivesSnake)
++ Tomasz asked how is this software “shipped” to users
+  + John said the users download software from the software’s Github repo’s release section
++ Someone asked if the code had unit tests, and some were not familiar with unit tests
+  + Yamil shared a presentation he gave to this same group last year called [“Intro to unit testing in Python”](https://docs.google.com/presentation/d/1t1dl7SANyhp4uClRP2JsijWj05nr5AkbUJIAB66GKFQ/edit?usp=sharing)
++ We talked about how to save credentials in your OS and not in the app
+  + Tomasz mentioned a Python module that can help with this:
+    + “The [Python keyring library](https://github.com/jaraco/keyring) provides an easy way to access the system keyring service from python. It can be used in any application that needs safe password storage. These recommended keyring backends are supported:”
+      + macOS Keychain
+      + Freedesktop Secret Service supports many DE including GNOME (requires secretstorage)
+      + KDE4 & KDE5 KWallet (requires dbus)
+      + Windows Credential Locker
++ We talked about how to handle using paths in your code to work in more than one OS
+  + it was suggested to look into using the built in “pathlib” library to make it easier to create cross platform paths and thus use less manual string concatenation to create paths
+    + https://realpython.com/python-pathlib/
+    + https://docs.python.org/3/library/pathlib.html
+
+Screenshots from John's presentation:
+![pax-opex1](media/pax-opex1.png)
+![pax-opex2](media/pax-opex2.png)
+![pax-opex3](media/pax-opex3.png)
+
 ### December 13, 2023
 We briefly talked about [“for … else” construct](https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops) that was recently mentioned in the #python Slack channel
 + I have only used it once, but I was very confused the first time I saw it
