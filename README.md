@@ -41,6 +41,7 @@ Would like to suggest a worthy resource? See [contributing instructions](CONTRIB
 + [Test & Code](https://testandcode.com/) hosted by Brian Okken, focused on automated testing in Python
 + [Talk Python To Me](https://talkpython.fm/) hosted by Michael Kennedy
 + [Podcast.__init__](https://www.pythonpodcast.com/) hosted by Tobias Macey
++ [The Real Python Podcast](https://realpython.com/podcasts/rpp/) weekly coding tips, news, and interviews
 
 ### Blogs
 + [Practical Business Python](https://pbpython.com/) / data science centric
