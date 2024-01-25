@@ -1,4 +1,33 @@
-### January 9, 2023
+### January 23, 2024
++ Mike was having issues making bulk edits to the built-in metadata (eg. author) in PDF files using the [pypdf module](https://pypi.org/project/pypdf/)
+  + repo: https://github.com/py-pdf/pypdf
+  + Daniel suggested he try a module like [PyExifTool](https://pypi.org/project/PyExifTool/) that taps into exif data
++ David mentioned that his library is migrating into Ex Libris Alma/Primo in the near future. 
+  + He asked about existing Alma API wrappers you use and if anyone had experience using them
+  + No one had suggestions for an API wrapper for Alma but many suggested he ask on the various Code4lib Slack channels
+  + There is a [possibly outdated project UC David from 5 years ago](https://github.com/UCDavisLibrary/almapipy)
++ Clinton put in a plug for using Postman to quickly use APIs
+  + https://www.postman.com/
+  + Craig also suggested [Insomnia](https://insomnia.rest/) as an alternative for working with APIs manually
+  + We may try to have a presentation in this group on the very basics of Postman in the future
++ David E. asked about how folks have been using chatGPT for coding python
+  + Many folks had success with writing code with chatGPT, but chatGPT does not know a lot about some technologies
+    + It doesn't know some details of OpenSearch and has invented functions in PyMARC when asked
+  + [HuggingChat](https://huggingface.co/chat/) was suggested as a better alternative to chatGPT, since it has a more recently updated model
+    + ChatGPT’s 3.x model is from 2021 and HuggingChat's model is supposed to be newer
+    + it has an option to “search the web” that, when enabled, will try to compliment its answers with information queried from the web
+  + Eric has used chatGPT for creating unit tests with more advanced features like “test parameterization”
++ Eric mentioned that he proposed a post-conference session at Code4lib 2024 for this group (python{4}lib)
+  + He asked for topic suggestions and volunteers
+  + The session will happen in the morning
++ David E. asked if folks are starting new projects that will necessitate using python to finish the projects 
+  + For those migrating to FOLIO ILS the [EBSCO python client](https://folio-migration-tools.readthedocs.io/en/latest/) was recommended
++ Daniel asked for suggestions for PAID software for digital humanities, since they have a budget for it
+  + Here were the suggestions:
+    + [Constellate from Jstor labs](https://labs.jstor.org/projects/text-mining) is a text analysis tool and they run workshops
+    + [Gale Digital Scholar Lab](https://www.gale.com/primary-sources/digital-scholar-lab#how-the-lab-works)
+
+### January 9, 2024
 John Dewees, DAM Lead at the University of Rochester, gave a presentation on the pax-opex-utility
 [pax-opex-utility](https://github.com/rochester-rcl/pax-opex-utility) is "a graphical utility to format PAX objects and OPEX metadata for ingest into Preservica as SIPs to be synced with ArchivesSpace" 
 + He used a PySimpleGUI utility to create a Windows executable
