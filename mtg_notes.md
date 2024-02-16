@@ -1,3 +1,39 @@
+### February 6, 2024
+ + Upcoming scheduled presentations/chats:
+   + Jeremy Nelson will talk about [pyscript](https://pyscript.net/) on Feb 20 
+   + Charlotte and Yamil will be talking virtual environments on Mar 19
+ + Rebecca recently gave a chat about something she built with [PysimpleGui](https://www.pysimplegui.org/en/latest/)
+   + there will be a video of this soon
+ + Michael went over how he solved his PDF batch change issue by using [pikePDF](https://pikepdf.readthedocs.io/en/latest/)
+   + He just wanted to batch change some simple low level PDF file metadata like the “author” field for the whole PDF file, but pikePDF can do a lot more with PDFs
+   + He mentioned how PDFs save file metadata in two ways, but pikePDF helps him access either
+   + He also mentioned an older Perl based tool called `exiftool` that is good for grabbing file metadata info
+     + https://exiftool.org/
+ + He fired up the [Pycharm python IDE](https://www.jetbrains.com/pycharm/) and ran the debugger on some sample code to show us some issues that he initially had, but has since solved
+    ```
+      from pikepdf import Pdf
+
+      with Pdf.open('original.pdf') as pdf:
+        with pdf.open_metadata() as meta:
+          del meta['dc:description']
+          del meta['pdf:Keywords']
+        pdf.save('clean.pdf')
+        
+      ```
+ + Yamil mentioned the upcoming PyCon 2024, and mentioned the $100 online only registration option. Also the videos will be posted on their Youtube channel after a month or so.
+   + https://us.pycon.org/2024/
+   + https://us.pycon.org/2024/attend/information/
+ + David asked about any new projects people have started with Python lately
+   + He mentioned that he is teaching a colleague to update OCLC holdings with Python using the OCLC Metadata API
+   + He also mentioned [bookops-worldcat](https://bookops-cat.github.io/bookops-worldcat/0.5/), Tomasz's library that acts as an “wrapper” for use with the OCLC Metadata API
+     + “... Bookops-Worldcat is a Python wrapper around OCLC’s Worldcat Metadata API which supports changes released in the version 1.1 (May 2020) of the web service. The package features methods that utilize search functionality of the API as well as read-write endpoints. The Bookops-Worldcat package simplifies some of the OCLC API boilerplate, and ideally lowers the technological threshold for cataloging departments that may not have sufficient programming support to access and utilize those web services. Python language, with its gentle learning curve, has the potential to be a perfect vehicle towards this goal. ...”
+   + David said he will share some sample code to show how he uses the OCLC Metadata API to update holdings with Python
+ + Alison asked if anyone has successfully used Alma APIs and scripting to bulk change loan due dates for expired patrons
+   + Alma doesn’t automatically do this when patron expiration dates change, which is a huge issue.
+     + Rebecca: I haven’t changed loan dates but I have done other small things with the user/fulfillment API so far
+     + Matt: I’ve used Python & the API once or twice to make bulk change due dates for specific users, but it’s been a while. Should be possible to do what you’re asking, though
+     + David: I think our systems librarian does something like that at the end of the semester or FY. I can check with him and see if there’s anything he’d be willing to share.
+
 ### January 23, 2024
 + Mike was having issues making bulk edits to the built-in metadata (eg. author) in PDF files using the [pypdf module](https://pypi.org/project/pypdf/)
   + repo: https://github.com/py-pdf/pypdf
