@@ -4,8 +4,10 @@ Shared space for the Python{4}Lib group.
 See our [meeting notes](mtg_notes.md) for more details.
 
 Upcoming meetings (meetings at 11am Eastern time):
-+ April 16, 2024
 + April 30, 2024
++ *No meeting on May 14 during Code4Lib conference*
++ May 28, 2024
++ June 11, 2024
 
 Would like to suggest a worthy resource? See [contributing instructions](CONTRIBUTING.md).
 
