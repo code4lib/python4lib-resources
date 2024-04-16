@@ -1,3 +1,40 @@
+### April 16, 2024
+ + David provided an update on the upcoming Python4Lib presentation schedule:
+   + April 30 - open topics
+   + May 14 - skipped, C4L in person
+   + May 28 - Thomas will be talking Jupyter Kernel Gateways
+   + June 11 - Rebecca will be talking Postman
+ + Eric Phetteplace spoke about hosting a Python4Lib workshop at the upcoming Code4Lib conference
+   + https://2024.code4lib.org/workshop/Python4Lib
+   + He mentioned that he would welcome a a volunteer to help with session and mentione that he can probably get the cost of the workshop refunded for the volunteer
+     + It’ll be a loose conversation similar to a Python4Lib missing and will cover more specific topics in the second half
+     + He mentioned asyncio as a potential topic he would like to explore in the session
+ + Eric spoke about getting access to some High Performance Computing and exploring parallel processing
+   + He mentioned that this set up has a “head node” that coordinates with the other nodes
+   + We shared some links with information on parallel work in Python
+     + https://realpython.com/python-concurrency/
+     + https://docs.python.org/3/library/multiprocessing.html
+     + https://realpython.com/async-io-python/
+     + https://realpython.com/python-gil/
+   + Then we spent a long time talking about the pros and cons of doing parallel work with Python
+     + Clinton had some details and examples of reasons why Python’s language design makes it comparatively very slow for parallel work compared to many other languages like Rust and C
+     + GIL is going away https://www.blog.pythonlibrary.org/2023/08/16/global-interpreter-lock-optional-in-python-3-13/
+ + We also talked about how despite the fact that Python is slower than other languages, you can take existing Python code/projects and update them over to the current parallel options in Python and in many situations you can still get really good improvements in performance
+   + Michelle shared an example of working with the Alma API using asyncio
+   + Her work went from a runtime of 1 hour for 2000 API calls to 5 minutes for 2000 API calls
+     + https://github.com/jhu-library-applications/alma-api/blob/main/updateItemFieldsFromCSVAsync.py
+     + Her code updates Alma items from a CSV, doing batches of 1000 rows at a time from the spreadsheet (to help catch errors in more manageable sets)
+   + Clinton also shared a Python profiler, to help see what parts of your code are running slow/fast and which parts are using C-based code (which runs faster)
+     + https://github.com/plasma-umass/scalene
+     + He also shared apresentaion on python performance
+       + [Python Performance Matters by Emery Berger (Strange Loop 2022)](https://www.youtube.com/watch?v=vVUnCXKuNOg)
+   + Jerrell asked if anyone had been working on AI assisted image cropping
+     + No one had worked on this yet but many people are interested in the topic
+   + We briefly talked about the use of [Whisper (from OpenAI)](https://openai.com/research/whisper) to create transcripts of videos
+     + We also spoke about [Otter AI](https://otter.ai/), another transcript platform that can use Zoom
+   + Handprint also came up
+     + https://2022.code4lib.org/talks/Handprint-A-program-to-explore-and-compare-major-cloudbased-services-for-handwritten-text-recognition
+
 ### April 2, 2024
  + Charlotte and Tomasz have released a new [version (1.0) of Bookops-Worldcat](https://github.com/BookOps-CAT/bookops-worldcat), a Python wrapper for the WorldCat Metadata API.
    + The new version supports changes made in [version 2.0 of the Metadata API](https://developer.api.oclc.org/wc-metadata-v2).
