@@ -1,3 +1,88 @@
+### April 2, 2024
+ + Charlotte and Tomasz have released a new [version (1.0) of Bookops-Worldcat](https://github.com/BookOps-CAT/bookops-worldcat), a Python wrapper for the WorldCat Metadata API.
+   + The new version supports changes made in [version 2.0 of the Metadata API](https://developer.api.oclc.org/wc-metadata-v2).
+   + The documentation is available on GitHub pages: https://bookops-cat.github.io/bookops-worldcat/
+ + Lauren at Rice is working on a reclamation project, gave a shoutout to Rebecca for some python notes she shared in the past.
+   + Here is Rebecca’s code:
+     + Pulls specified data from holdings records in Alma, using the Bibs API
+     + https://github.com/LibraryNinja/Holdings_Record_Inpsector
+ + Rebecca talked about her recent work using Tkinter. She has been changing code written using PySimpleGUI to Tkinter after PySimpleGUI changed their licensing and would require a fee for higher ed use.
+     + https://docs.python.org/3/library/tkinter.html
+     + https://realpython.com/python-gui-tkinter/
+     + https://github.com/TomSchimansky/CustomTkinter
+   + Someone asked Rebecca for beginer Tkinter resources and she recommended two courses/videos
+     + [Create Graphical User Interfaces With Python And TKinter](https://www.youtube.com/playlist?list=PLCC34OHNcOtoC6GglhF3ncJ5rLwQrLGnV)
+     + [A Linkedin Learning Course](https://www.linkedin.com/learning/python-gui-development-with-tkinter-2?u=2147385)
+   + Eric asked if once can create a single executable with a custom desktop icon for the resulting app with Tkinter
+     + Rebecca said it is possible, but would require the use of a packaging utility
+       + Rebecca: “PyInstaller is the thing that packages it all up using the command line, Auto-py-to-exe is a layer on top for it”
+ + Emily had a question about using pymarc for some batch edits, but it did not work as she hoped(?)
+   + “At my institution, we’ve got one person (me) identifying OCLC numbers for changes in one, now pymarc script, that a second person then feeds into the Metadata API 2.0 to make changes. Using the BookOps library would we be able to integrate the script searching for identifiers with the script that makes batch changes?”
+ + Charles shared a new project he and Eddie are working on using Flask to connect to the Alma API
+   + https://flask.palletsprojects.com/en/3.0.x/
+   + https://en.wikipedia.org/wiki/Flask_(web_framework)
+   + The application lives on the Azure cloud, but it runs via Docker for local tests and on the cloud
+ + Javier asked about Charles' use of ChatGPT 4, if he could share reasons to justify the cost of chatGPT 4
+   + Javier also asked about the various “personas” that Charles used. 
+   + Charles then explained how to give “context” to each “persona.” Like stating that the human users is already experienced in programming.
+   + Charles also mentioned that he asks chatGPT questions that chatGPT may need answered before it can properly answer a particular prompt (or all prompts going forward for a single “persona”)
+   + Charles also recommended other LLMs that worked well for him for code questions if you cannot pay for ChatGPT 4 (some of the ones below have paid versions too)
+     + https://www.phind.com/search
+     + https://www.anthropic.com/claude
+
+### March 19th, 2024
+ + Yamil and Charlotte gave a presentation on Python Virtual Environments & requirements.txt
+   + https://docs.google.com/presentation/d/1XvnmQFdCkBWnD4javgJ0SPn-Uzp7F8if4dIh6qPxKos/edit?usp=sharing
+ + Q&A/Discussion
+   + Using pyproject.toml vs. requirements.txt
+     + pyproject.toml files are more complex/powerful
+     + this should be a presentation topic in the future
+     + https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
+   + Dependency management and how to properly deploy code to someone else’s machine
+   + pipx: https://github.com/pypa/pipx
+     + how to install packages globally while still keeping them separate form the global Python install
+
+### March 5th, 2024
+ + Rebecca mentioned that Pysimple GUI has moved to a license model and was wondering if it is common for a package to move to a closed license
+   + Clinton mentioned he has seen it maybe 5 times
+   + It makes projects very brittle because every person needs to get a key annually
+ + We discussed alternatives to PySimpleGUI
+   + TKinter: https://docs.python.org/3/library/tkinter.html
+   + PyQt: https://wiki.python.org/moin/PyQt
+   + Clinton also mentioned using a python backend with a simple HTML frontend in the past as a potential alternative to PySimpleGUI
+     + If the project doesnt need the user interface to change, the project won't require any javascript
+     + Buttons can send calls to Flask endpoints
+       + Example: randomizing math exercises from text book
+       + Basic inputs with some rendering in Flask
+       + It has a low barrier to entry
+       + The python is running locally and you type in the local host in the browser
+       + Will always use a browser as the front end
+   + Brooks mentioned [FastUI](https://github.com/pydantic/FastUI) and [DearPyGUI](https://github.com/hoffstadt/DearPyGui) 
+     + https://talkpython.fm/episodes/show/348/dear-pygui-simple-yet-fast-python-gui-apps 
+ + Tomasz mentioned that python isn’t really known for windows apps especially because TKinter is part of the standard library but looks very dated
+   + The library isn’t copied into your virtual environment
+   + https://beeware.org/project/projects/libraries/toga/
+   + Rebecca mentioned TTKbootstrap: https://ttkbootstrap.readthedocs.io/en/latest/ 
+ + Rebecca asked how to ensure that one won’t be burned in the future 
+   + Clinton suggested focussing on tools with very wide adoption (like Flask or Django)
+   + Tools that are widely used can’t make that sort of change without it being too disruptive
+ + If anyone would like to evaluate any of these tools and present on their findings it would be a welcome presentation
+ + Rebecca mentioned a self-checkout tool that she is developing and asked for feedback
+   + She is working with a group within CUNY to develop this tool
+   + It will run in a terminal where someone could enter their User ID and check out a book
+ + Charlotte asked for feedback on [bookops-worldcat](https://github.com/BookOps-CAT/bookops-worldcat)
+ + David mentioned that he and Lauren are working on an OCLC reclamation using [bookops-worldcat](https://github.com/BookOps-CAT/bookops-worldcat)
+ + Clinton offered to present on creating simple APIs in the future
+   + Eric said he was interested in learning more about FastAPI
+   + Tomasz asked about Jupyter Kernel Gateway to implement a local API to query from within an OpenRefine project
+     + https://github.com/MichaelMarkert/GND4C/blob/main/APIs_for_OpenRefine/localAPI.ipynb
+ + Kate asked about adding 758 fields to ILS records
+   + She is exploring adding them to their collection in a batch
+
+### February 20th, 2024
+(Missing notes from Jeremy's presentation on pyscript)
+
+
 ### February 6, 2024
  + Upcoming scheduled presentations/chats:
    + Jeremy Nelson will talk about [pyscript](https://pyscript.net/) on Feb 20 
