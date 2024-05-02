@@ -1,3 +1,40 @@
+### April 30, 2024
+  + David asked if anyone had experience with or knew of any automated discard assessment tools
+    + Javier said he has 25,000 volumes to assess for discard
+    + Tomasz said other groups may know more about these types of tools because tech services may not have responsibility for collections assessment. Reference librarians may know more about potential tools to use.
+    + Sara Amato has used OCLC API “to look at WC holdings and compare also to HathiTrust and comparisons to other libraries in our group to help make decisions - not great for large scale projects but good for smaller lists. I don’t have the code up anywhere though… and it doesn’t have any item level data like circ.”
+ + Tomasz asked if Pymarc will have a new release due to a change in how indicators are handled
+   + Indicators will be a named tuple that can only have two positions rather than a list which could be of any length
+     + The change is outlined in this merge request: https://gitlab.com/pymarc/pymarc/-/merge_requests/206
+   + Ed: No scheduled release, reluctant to introduce another major version with breaking changes
+   + More discussion of the change is in the [pymarc google group](https://groups.google.com/g/pymarc/c/cMkDb-dDDBY?pli=1)
+ + Michael asked if anyone has experience working with APIs for wikimedia/wikimedia commons
+   + He has copyright free newspaper images he would like to upload in bulk as PDFs (rather than image files which the other wikicommons tools can use)
+   + Javier mentioned using the APIs to get data out of wikimedia commons but not to POST data
+ + Tomasz asked about Michael’s involvement in movement to preserve Ukrainian cultural heritage materials after the start of the full scale invasion 
+   + Michael noted there are two parts to this preservation work:
+     + [SUCHO](https://www.sucho.org/) works on preserving publicly available materials
+     + There is a separate effort to back up digital materials that are not publicly available
+   + Michael mentioned Maryna Paliienko, a Fulbright Scholar from Taras Shevchenko University, whose project focuses on archives 
+     + Maryna and Michael recently gave a presentation at NYU: https://www.nycarchivists.org/event-5671162 
+ + Michelle asked for help figuring out why her API calls hang when she tries to upload large files
+   + Files are ~2GB and she is posting them using the DSpace API. The files have to be read in binary before uploading them and the requests just hang after uploading the file successfully
+   + Yamil mentioned that Python has issues with downloading files that are larger than available RAM and wondered if it has a similar issue with uploading files larger than available RAM
+     + He also provided link to streaming uploads with Requests: https://requests.readthedocs.io/en/latest/user/advanced/#streaming-uploads 
+   + Impromptu code review: https://github.com/mjanowiecki/dspace7-rest-api/blob/main/post/postItemsToCollection.py 
+     + Susan asked if the code is sending the correct residual size
+     + If chunks are in unequal sizes (or the last chunk is not the same size as the others), the API will wait for the last chunk to reach the size of the other chunks
+     + Ed said it could be helpful to add the complete upload size in the content-length header with the POST request
+   + Michelle provided a link to a tool that makes it easier to authenticate using the DSpace API: https://github.com/the-library-code/dspace-rest-python/tree/main 
+ + John asked if anyone had recommendations for tools to use to take messy data from google docs and publish it to a dashboard a couple of times a year
+   + Has been looking at [Streamlit](https://streamlit.io/) and [Pygwalker](https://github.com/Kanaries/pygwalker) as potential options
+     + Pygwalker has tableau-like display
+   + Jeremy used streamlit for a project with Hopkins Marine Station: https://taxa.stanford.edu/ 
+     + One issue he noted was that every time a user would interact with the dashboard it would completely reload
+ + Michael mentioned stumbling across a tool called [Discorpy](https://discorpy.readthedocs.io/en/latest/index.html) and thought it may be of interest after discussion in last Python4Lib session about image cropping/manipulation
+   + It is a tool for measuring lens distortion in a camera
+ + Yamil mentioned he is learning about [SeleniumBase](https://seleniumbase.io/)
+
 ### April 16, 2024
  + David provided an update on the upcoming Python4Lib presentation schedule:
    + April 30 - open topics
