@@ -1,3 +1,162 @@
+### April 30, 2024
+  + David asked if anyone had experience with or knew of any automated discard assessment tools
+    + Javier said he has 25,000 volumes to assess for discard
+    + Tomasz said other groups may know more about these types of tools because tech services may not have responsibility for collections assessment. Reference librarians may know more about potential tools to use.
+    + Sara Amato has used OCLC API “to look at WC holdings and compare also to HathiTrust and comparisons to other libraries in our group to help make decisions - not great for large scale projects but good for smaller lists. I don’t have the code up anywhere though… and it doesn’t have any item level data like circ.”
+ + Tomasz asked if Pymarc will have a new release due to a change in how indicators are handled
+   + Indicators will be a named tuple that can only have two positions rather than a list which could be of any length
+     + The change is outlined in this merge request: https://gitlab.com/pymarc/pymarc/-/merge_requests/206
+   + Ed: No scheduled release, reluctant to introduce another major version with breaking changes
+   + More discussion of the change is in the [pymarc google group](https://groups.google.com/g/pymarc/c/cMkDb-dDDBY?pli=1)
+ + Michael asked if anyone has experience working with APIs for wikimedia/wikimedia commons
+   + He has copyright free newspaper images he would like to upload in bulk as PDFs (rather than image files which the other wikicommons tools can use)
+   + Javier mentioned using the APIs to get data out of wikimedia commons but not to POST data
+ + Tomasz asked about Michael’s involvement in movement to preserve Ukrainian cultural heritage materials after the start of the full scale invasion 
+   + Michael noted there are two parts to this preservation work:
+     + [SUCHO](https://www.sucho.org/) works on preserving publicly available materials
+     + There is a separate effort to back up digital materials that are not publicly available
+   + Michael mentioned Maryna Paliienko, a Fulbright Scholar from Taras Shevchenko University, whose project focuses on archives 
+     + Maryna and Michael recently gave a presentation at NYU: https://www.nycarchivists.org/event-5671162 
+ + Michelle asked for help figuring out why her API calls hang when she tries to upload large files
+   + Files are ~2GB and she is posting them using the DSpace API. The files have to be read in binary before uploading them and the requests just hang after uploading the file successfully
+   + Yamil mentioned that Python has issues with downloading files that are larger than available RAM and wondered if it has a similar issue with uploading files larger than available RAM
+     + He also provided link to streaming uploads with Requests: https://requests.readthedocs.io/en/latest/user/advanced/#streaming-uploads 
+   + Impromptu code review: https://github.com/mjanowiecki/dspace7-rest-api/blob/main/post/postItemsToCollection.py 
+     + Susan asked if the code is sending the correct residual size
+     + If chunks are in unequal sizes (or the last chunk is not the same size as the others), the API will wait for the last chunk to reach the size of the other chunks
+     + Ed said it could be helpful to add the complete upload size in the content-length header with the POST request
+   + Michelle provided a link to a tool that makes it easier to authenticate using the DSpace API: https://github.com/the-library-code/dspace-rest-python/tree/main 
+ + John asked if anyone had recommendations for tools to use to take messy data from google docs and publish it to a dashboard a couple of times a year
+   + Has been looking at [Streamlit](https://streamlit.io/) and [Pygwalker](https://github.com/Kanaries/pygwalker) as potential options
+     + Pygwalker has tableau-like display
+   + Jeremy used streamlit for a project with Hopkins Marine Station: https://taxa.stanford.edu/ 
+     + One issue he noted was that every time a user would interact with the dashboard it would completely reload
+ + Michael mentioned stumbling across a tool called [Discorpy](https://discorpy.readthedocs.io/en/latest/index.html) and thought it may be of interest after discussion in last Python4Lib session about image cropping/manipulation
+   + It is a tool for measuring lens distortion in a camera
+ + Yamil mentioned he is learning about [SeleniumBase](https://seleniumbase.io/)
+
+### April 16, 2024
+ + David provided an update on the upcoming Python4Lib presentation schedule:
+   + April 30 - open topics
+   + May 14 - skipped, C4L in person
+   + May 28 - Thomas will be talking Jupyter Kernel Gateways
+   + June 11 - Rebecca will be talking Postman
+ + Eric Phetteplace spoke about hosting a Python4Lib workshop at the upcoming Code4Lib conference
+   + https://2024.code4lib.org/workshop/Python4Lib
+   + He mentioned that he would welcome a a volunteer to help with session and mentione that he can probably get the cost of the workshop refunded for the volunteer
+     + It’ll be a loose conversation similar to a Python4Lib missing and will cover more specific topics in the second half
+     + He mentioned asyncio as a potential topic he would like to explore in the session
+ + Eric spoke about getting access to some High Performance Computing and exploring parallel processing
+   + He mentioned that this set up has a “head node” that coordinates with the other nodes
+   + We shared some links with information on parallel work in Python
+     + https://realpython.com/python-concurrency/
+     + https://docs.python.org/3/library/multiprocessing.html
+     + https://realpython.com/async-io-python/
+     + https://realpython.com/python-gil/
+   + Then we spent a long time talking about the pros and cons of doing parallel work with Python
+     + Clinton had some details and examples of reasons why Python’s language design makes it comparatively very slow for parallel work compared to many other languages like Rust and C
+     + GIL is going away https://www.blog.pythonlibrary.org/2023/08/16/global-interpreter-lock-optional-in-python-3-13/
+ + We also talked about how despite the fact that Python is slower than other languages, you can take existing Python code/projects and update them over to the current parallel options in Python and in many situations you can still get really good improvements in performance
+   + Michelle shared an example of working with the Alma API using asyncio
+   + Her work went from a runtime of 1 hour for 2000 API calls to 5 minutes for 2000 API calls
+     + https://github.com/jhu-library-applications/alma-api/blob/main/updateItemFieldsFromCSVAsync.py
+     + Her code updates Alma items from a CSV, doing batches of 1000 rows at a time from the spreadsheet (to help catch errors in more manageable sets)
+   + Clinton also shared a Python profiler, to help see what parts of your code are running slow/fast and which parts are using C-based code (which runs faster)
+     + https://github.com/plasma-umass/scalene
+     + He also shared apresentaion on python performance
+       + [Python Performance Matters by Emery Berger (Strange Loop 2022)](https://www.youtube.com/watch?v=vVUnCXKuNOg)
+   + Jerrell asked if anyone had been working on AI assisted image cropping
+     + No one had worked on this yet but many people are interested in the topic
+   + We briefly talked about the use of [Whisper (from OpenAI)](https://openai.com/research/whisper) to create transcripts of videos
+     + We also spoke about [Otter AI](https://otter.ai/), another transcript platform that can use Zoom
+   + Handprint also came up
+     + https://2022.code4lib.org/talks/Handprint-A-program-to-explore-and-compare-major-cloudbased-services-for-handwritten-text-recognition
+
+### April 2, 2024
+ + Charlotte and Tomasz have released a new [version (1.0) of Bookops-Worldcat](https://github.com/BookOps-CAT/bookops-worldcat), a Python wrapper for the WorldCat Metadata API.
+   + The new version supports changes made in [version 2.0 of the Metadata API](https://developer.api.oclc.org/wc-metadata-v2).
+   + The documentation is available on GitHub pages: https://bookops-cat.github.io/bookops-worldcat/
+ + Lauren at Rice is working on a reclamation project, gave a shoutout to Rebecca for some python notes she shared in the past.
+   + Here is Rebecca’s code:
+     + Pulls specified data from holdings records in Alma, using the Bibs API
+     + https://github.com/LibraryNinja/Holdings_Record_Inpsector
+ + Rebecca talked about her recent work using Tkinter. She has been changing code written using PySimpleGUI to Tkinter after PySimpleGUI changed their licensing and would require a fee for higher ed use.
+     + https://docs.python.org/3/library/tkinter.html
+     + https://realpython.com/python-gui-tkinter/
+     + https://github.com/TomSchimansky/CustomTkinter
+   + Someone asked Rebecca for beginer Tkinter resources and she recommended two courses/videos
+     + [Create Graphical User Interfaces With Python And TKinter](https://www.youtube.com/playlist?list=PLCC34OHNcOtoC6GglhF3ncJ5rLwQrLGnV)
+     + [A Linkedin Learning Course](https://www.linkedin.com/learning/python-gui-development-with-tkinter-2?u=2147385)
+   + Eric asked if once can create a single executable with a custom desktop icon for the resulting app with Tkinter
+     + Rebecca said it is possible, but would require the use of a packaging utility
+       + Rebecca: “PyInstaller is the thing that packages it all up using the command line, Auto-py-to-exe is a layer on top for it”
+ + Emily had a question about using pymarc for some batch edits, but it did not work as she hoped(?)
+   + “At my institution, we’ve got one person (me) identifying OCLC numbers for changes in one, now pymarc script, that a second person then feeds into the Metadata API 2.0 to make changes. Using the BookOps library would we be able to integrate the script searching for identifiers with the script that makes batch changes?”
+ + Charles shared a new project he and Eddie are working on using Flask to connect to the Alma API
+   + https://flask.palletsprojects.com/en/3.0.x/
+   + https://en.wikipedia.org/wiki/Flask_(web_framework)
+   + The application lives on the Azure cloud, but it runs via Docker for local tests and on the cloud
+ + Javier asked about Charles' use of ChatGPT 4, if he could share reasons to justify the cost of chatGPT 4
+   + Javier also asked about the various “personas” that Charles used. 
+   + Charles then explained how to give “context” to each “persona.” Like stating that the human users is already experienced in programming.
+   + Charles also mentioned that he asks chatGPT questions that chatGPT may need answered before it can properly answer a particular prompt (or all prompts going forward for a single “persona”)
+   + Charles also recommended other LLMs that worked well for him for code questions if you cannot pay for ChatGPT 4 (some of the ones below have paid versions too)
+     + https://www.phind.com/search
+     + https://www.anthropic.com/claude
+
+### March 19th, 2024
+ + Yamil and Charlotte gave a presentation on Python Virtual Environments & requirements.txt
+   + https://docs.google.com/presentation/d/1XvnmQFdCkBWnD4javgJ0SPn-Uzp7F8if4dIh6qPxKos/edit?usp=sharing
+ + Q&A/Discussion
+   + Using pyproject.toml vs. requirements.txt
+     + pyproject.toml files are more complex/powerful
+     + this should be a presentation topic in the future
+     + https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
+   + Dependency management and how to properly deploy code to someone else’s machine
+   + pipx: https://github.com/pypa/pipx
+     + how to install packages globally while still keeping them separate form the global Python install
+
+### March 5th, 2024
+ + Rebecca mentioned that Pysimple GUI has moved to a license model and was wondering if it is common for a package to move to a closed license
+   + Clinton mentioned he has seen it maybe 5 times
+   + It makes projects very brittle because every person needs to get a key annually
+ + We discussed alternatives to PySimpleGUI
+   + TKinter: https://docs.python.org/3/library/tkinter.html
+   + PyQt: https://wiki.python.org/moin/PyQt
+   + Clinton also mentioned using a python backend with a simple HTML frontend in the past as a potential alternative to PySimpleGUI
+     + If the project doesnt need the user interface to change, the project won't require any javascript
+     + Buttons can send calls to Flask endpoints
+       + Example: randomizing math exercises from text book
+       + Basic inputs with some rendering in Flask
+       + It has a low barrier to entry
+       + The python is running locally and you type in the local host in the browser
+       + Will always use a browser as the front end
+   + Brooks mentioned [FastUI](https://github.com/pydantic/FastUI) and [DearPyGUI](https://github.com/hoffstadt/DearPyGui) 
+     + https://talkpython.fm/episodes/show/348/dear-pygui-simple-yet-fast-python-gui-apps 
+ + Tomasz mentioned that python isn’t really known for windows apps especially because TKinter is part of the standard library but looks very dated
+   + The library isn’t copied into your virtual environment
+   + https://beeware.org/project/projects/libraries/toga/
+   + Rebecca mentioned TTKbootstrap: https://ttkbootstrap.readthedocs.io/en/latest/ 
+ + Rebecca asked how to ensure that one won’t be burned in the future 
+   + Clinton suggested focussing on tools with very wide adoption (like Flask or Django)
+   + Tools that are widely used can’t make that sort of change without it being too disruptive
+ + If anyone would like to evaluate any of these tools and present on their findings it would be a welcome presentation
+ + Rebecca mentioned a self-checkout tool that she is developing and asked for feedback
+   + She is working with a group within CUNY to develop this tool
+   + It will run in a terminal where someone could enter their User ID and check out a book
+ + Charlotte asked for feedback on [bookops-worldcat](https://github.com/BookOps-CAT/bookops-worldcat)
+ + David mentioned that he and Lauren are working on an OCLC reclamation using [bookops-worldcat](https://github.com/BookOps-CAT/bookops-worldcat)
+ + Clinton offered to present on creating simple APIs in the future
+   + Eric said he was interested in learning more about FastAPI
+   + Tomasz asked about Jupyter Kernel Gateway to implement a local API to query from within an OpenRefine project
+     + https://github.com/MichaelMarkert/GND4C/blob/main/APIs_for_OpenRefine/localAPI.ipynb
+ + Kate asked about adding 758 fields to ILS records
+   + She is exploring adding them to their collection in a batch
+
+### February 20th, 2024
+(Missing notes from Jeremy's presentation on pyscript)
+
+
 ### February 6, 2024
  + Upcoming scheduled presentations/chats:
    + Jeremy Nelson will talk about [pyscript](https://pyscript.net/) on Feb 20 
