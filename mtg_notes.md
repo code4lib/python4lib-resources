@@ -1,3 +1,15 @@
+### May 16, 2024 (Code4Lib Post-Conference Session)
+  + Eric Phetteplace ran a workshop on [Python4Lib](https://2024.code4lib.org/workshop/Python4Lib) at Code4Lib 2024 in Ann Arbor
+  + Started with an open discussion where we talked about people's experience with Python and some general topics
+    + Some folks were mainly familiar with running Python in notebooks, others were more familiar with running Python scripts
+    + We spoke a bit about managing dependencies and tools like Pipenv/Poetry that help with this and abstract over virtual environments
+    + We discussed asyncio and asynchronoous programming generally, when to use it, what types of problems it addresses, and CPU-bound (computation heavy) vs IO-bound (network/files heavy) tasks
+    + Eric introduced his [`marcgrep`](https://github.com/phette23/marcgreppy) CLI tool for searching MARC records
+  + We worked through the [c4l24-python4lib](https://github.com/phette23/c4l24-python4lib) repo which has notebooks on several topics. The only topics we covered specifically were:
+    + [Jupyter Notebooks](https://github.com/phette23/c4l24-python4lib/blob/main/docs/notebooks.md) (the material was delivered as notebooks)
+    + [Pymarc](https://github.com/phette23/c4l24-python4lib/blob/main/docs/pymarc.ipynb) and common usage patterns, the most foolproof ways to get and modify record information
+    + [Pandas](https://github.com/phette23/c4l24-python4lib/blob/main/docs/pandas.ipynb) and its fundamental concepts (DataFrames, Series), how to summarize loaded data, stopped after introducing how to filter via bracket expressions
+
 ### April 30, 2024
   + David asked if anyone had experience with or knew of any automated discard assessment tools
     + Javier said he has 25,000 volumes to assess for discard
@@ -11,25 +23,25 @@
  + Michael asked if anyone has experience working with APIs for wikimedia/wikimedia commons
    + He has copyright free newspaper images he would like to upload in bulk as PDFs (rather than image files which the other wikicommons tools can use)
    + Javier mentioned using the APIs to get data out of wikimedia commons but not to POST data
- + Tomasz asked about Michael’s involvement in movement to preserve Ukrainian cultural heritage materials after the start of the full scale invasion 
+ + Tomasz asked about Michael’s involvement in movement to preserve Ukrainian cultural heritage materials after the start of the full scale invasion
    + Michael noted there are two parts to this preservation work:
      + [SUCHO](https://www.sucho.org/) works on preserving publicly available materials
      + There is a separate effort to back up digital materials that are not publicly available
-   + Michael mentioned Maryna Paliienko, a Fulbright Scholar from Taras Shevchenko University, whose project focuses on archives 
-     + Maryna and Michael recently gave a presentation at NYU: https://www.nycarchivists.org/event-5671162 
+   + Michael mentioned Maryna Paliienko, a Fulbright Scholar from Taras Shevchenko University, whose project focuses on archives
+     + Maryna and Michael recently gave a presentation at NYU: https://www.nycarchivists.org/event-5671162
  + Michelle asked for help figuring out why her API calls hang when she tries to upload large files
    + Files are ~2GB and she is posting them using the DSpace API. The files have to be read in binary before uploading them and the requests just hang after uploading the file successfully
    + Yamil mentioned that Python has issues with downloading files that are larger than available RAM and wondered if it has a similar issue with uploading files larger than available RAM
-     + He also provided link to streaming uploads with Requests: https://requests.readthedocs.io/en/latest/user/advanced/#streaming-uploads 
-   + Impromptu code review: https://github.com/mjanowiecki/dspace7-rest-api/blob/main/post/postItemsToCollection.py 
+     + He also provided link to streaming uploads with Requests: https://requests.readthedocs.io/en/latest/user/advanced/#streaming-uploads
+   + Impromptu code review: https://github.com/mjanowiecki/dspace7-rest-api/blob/main/post/postItemsToCollection.py
      + Susan asked if the code is sending the correct residual size
      + If chunks are in unequal sizes (or the last chunk is not the same size as the others), the API will wait for the last chunk to reach the size of the other chunks
      + Ed said it could be helpful to add the complete upload size in the content-length header with the POST request
-   + Michelle provided a link to a tool that makes it easier to authenticate using the DSpace API: https://github.com/the-library-code/dspace-rest-python/tree/main 
+   + Michelle provided a link to a tool that makes it easier to authenticate using the DSpace API: https://github.com/the-library-code/dspace-rest-python/tree/main
  + John asked if anyone had recommendations for tools to use to take messy data from google docs and publish it to a dashboard a couple of times a year
    + Has been looking at [Streamlit](https://streamlit.io/) and [Pygwalker](https://github.com/Kanaries/pygwalker) as potential options
      + Pygwalker has tableau-like display
-   + Jeremy used streamlit for a project with Hopkins Marine Station: https://taxa.stanford.edu/ 
+   + Jeremy used streamlit for a project with Hopkins Marine Station: https://taxa.stanford.edu/
      + One issue he noted was that every time a user would interact with the dashboard it would completely reload
  + Michael mentioned stumbling across a tool called [Discorpy](https://discorpy.readthedocs.io/en/latest/index.html) and thought it may be of interest after discussion in last Python4Lib session about image cropping/manipulation
    + It is a tool for measuring lens distortion in a camera
@@ -97,7 +109,7 @@
    + https://en.wikipedia.org/wiki/Flask_(web_framework)
    + The application lives on the Azure cloud, but it runs via Docker for local tests and on the cloud
  + Javier asked about Charles' use of ChatGPT 4, if he could share reasons to justify the cost of chatGPT 4
-   + Javier also asked about the various “personas” that Charles used. 
+   + Javier also asked about the various “personas” that Charles used.
    + Charles then explained how to give “context” to each “persona.” Like stating that the human users is already experienced in programming.
    + Charles also mentioned that he asks chatGPT questions that chatGPT may need answered before it can properly answer a particular prompt (or all prompts going forward for a single “persona”)
    + Charles also recommended other LLMs that worked well for him for code questions if you cannot pay for ChatGPT 4 (some of the ones below have paid versions too)
@@ -131,13 +143,13 @@
        + It has a low barrier to entry
        + The python is running locally and you type in the local host in the browser
        + Will always use a browser as the front end
-   + Brooks mentioned [FastUI](https://github.com/pydantic/FastUI) and [DearPyGUI](https://github.com/hoffstadt/DearPyGui) 
-     + https://talkpython.fm/episodes/show/348/dear-pygui-simple-yet-fast-python-gui-apps 
+   + Brooks mentioned [FastUI](https://github.com/pydantic/FastUI) and [DearPyGUI](https://github.com/hoffstadt/DearPyGui)
+     + https://talkpython.fm/episodes/show/348/dear-pygui-simple-yet-fast-python-gui-apps
  + Tomasz mentioned that python isn’t really known for windows apps especially because TKinter is part of the standard library but looks very dated
    + The library isn’t copied into your virtual environment
    + https://beeware.org/project/projects/libraries/toga/
-   + Rebecca mentioned TTKbootstrap: https://ttkbootstrap.readthedocs.io/en/latest/ 
- + Rebecca asked how to ensure that one won’t be burned in the future 
+   + Rebecca mentioned TTKbootstrap: https://ttkbootstrap.readthedocs.io/en/latest/
+ + Rebecca asked how to ensure that one won’t be burned in the future
    + Clinton suggested focussing on tools with very wide adoption (like Flask or Django)
    + Tools that are widely used can’t make that sort of change without it being too disruptive
  + If anyone would like to evaluate any of these tools and present on their findings it would be a welcome presentation
@@ -159,7 +171,7 @@
 
 ### February 6, 2024
  + Upcoming scheduled presentations/chats:
-   + Jeremy Nelson will talk about [pyscript](https://pyscript.net/) on Feb 20 
+   + Jeremy Nelson will talk about [pyscript](https://pyscript.net/) on Feb 20
    + Charlotte and Yamil will be talking virtual environments on Mar 19
  + Rebecca recently gave a chat about something she built with [PysimpleGui](https://www.pysimplegui.org/en/latest/)
    + there will be a video of this soon
@@ -177,7 +189,7 @@
           del meta['dc:description']
           del meta['pdf:Keywords']
         pdf.save('clean.pdf')
-        
+
       ```
  + Yamil mentioned the upcoming PyCon 2024, and mentioned the $100 online only registration option. Also the videos will be posted on their Youtube channel after a month or so.
    + https://us.pycon.org/2024/
@@ -197,7 +209,7 @@
 + Mike was having issues making bulk edits to the built-in metadata (eg. author) in PDF files using the [pypdf module](https://pypi.org/project/pypdf/)
   + repo: https://github.com/py-pdf/pypdf
   + Daniel suggested he try a module like [PyExifTool](https://pypi.org/project/PyExifTool/) that taps into exif data
-+ David mentioned that his library is migrating into Ex Libris Alma/Primo in the near future. 
++ David mentioned that his library is migrating into Ex Libris Alma/Primo in the near future.
   + He asked about existing Alma API wrappers you use and if anyone had experience using them
   + No one had suggestions for an API wrapper for Alma but many suggested he ask on the various Code4lib Slack channels
   + There is a [possibly outdated project UC David from 5 years ago](https://github.com/UCDavisLibrary/almapipy)
@@ -215,7 +227,7 @@
 + Eric mentioned that he proposed a post-conference session at Code4lib 2024 for this group (python{4}lib)
   + He asked for topic suggestions and volunteers
   + The session will happen in the morning
-+ David E. asked if folks are starting new projects that will necessitate using python to finish the projects 
++ David E. asked if folks are starting new projects that will necessitate using python to finish the projects
   + For those migrating to FOLIO ILS the [EBSCO python client](https://folio-migration-tools.readthedocs.io/en/latest/) was recommended
 + Daniel asked for suggestions for PAID software for digital humanities, since they have a budget for it
   + Here were the suggestions:
@@ -224,7 +236,7 @@
 
 ### January 9, 2024
 John Dewees, DAM Lead at the University of Rochester, gave a presentation on the pax-opex-utility
-[pax-opex-utility](https://github.com/rochester-rcl/pax-opex-utility) is "a graphical utility to format PAX objects and OPEX metadata for ingest into Preservica as SIPs to be synced with ArchivesSpace" 
+[pax-opex-utility](https://github.com/rochester-rcl/pax-opex-utility) is "a graphical utility to format PAX objects and OPEX metadata for ingest into Preservica as SIPs to be synced with ArchivesSpace"
 + He used a PySimpleGUI utility to create a Windows executable
   + https://www.pysimplegui.org/en/latest/
   + the pax-opex-utility only works on Windows at this time
@@ -361,7 +373,7 @@ see image of Eric’s example of using pymarc code that was shared
   + https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_values.html
   + https://pandas.pydata.org/
   + https://plotly.com/python/
-  
+
 + Rebecca was hosting her code on Google Colab, which is a way to run Jupyter notebooks on a shared site that you can then share with others
 https://research.google.com/colaboratory/
 https://jupyter.org/
@@ -371,7 +383,7 @@ here are some short post with some comments on why we should avoid using regex w
   + https://medium.com/thecyberfibre/stop-parsing-x-html-with-regular-expression-2cf13215b411
    + https://stackoverflow.com/questions/8577060/why-is-it-such-a-bad-idea-to-parse-xml-with-regex
 + Here are some examples of python modules that are meant to handle XML
-  + [ElementTree XML API](https://docs.python.org/3/library/xml.etree.elementtree.html) 
+  + [ElementTree XML API](https://docs.python.org/3/library/xml.etree.elementtree.html)
   + [this one is built-in to Python BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)
   + this one is usually used for parsing HTML but can handle XML [lxml](https://lxml.de/)
 
@@ -514,7 +526,7 @@ https://pycodestyle.pycqa.org/en/latest/
 ### August 8, 2023
 Our meet focused on [Pydantic](https://docs.pydantic.dev/latest/). Matt Lincoln from JSTOR Labs gave a brief intorduction into the tool and its uses.
 
-Matt used [this jupyter notebook](demo/pydantic.ipynb) to demo basic Pydantic syntax and validation functinality. 
+Matt used [this jupyter notebook](demo/pydantic.ipynb) to demo basic Pydantic syntax and validation functinality.
 
 + Data validation can be done using Python type hints
 + Fast and extensible, Pydantic plays nicely with your linters/IDE/brain. Define how data should be in pure, canonical Python 3.7+; validate it with Pydantic.
@@ -918,7 +930,7 @@ df = pd.read_csv('/content/drive/My Drive/Colab Notebooks/data.tsv', sep='\t')
 
 
 
-### March 21, 2023 
+### March 21, 2023
 + Talked about this group’s [new repository](https://github.com/code4lib/python4lib-resources), and that we want to encourage others to contribute changes via PRs (or reach out to the group)
 + Talked about combining JS and python for web visualization
   + [Data Visualization with Python and JavaScript, 2nd Edition by Kyran Dale](https://www.oreilly.com/library/view/data-visualization-with/9781098111861/)
