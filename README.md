@@ -5,8 +5,9 @@ See our [meeting notes](mtg_notes.md) for more details.
 
 Upcoming meetings (meetings at 11am Eastern time):
 + *No meeting on May 14 during Code4Lib conference*
-+ May 28, 2024
-+ June 11, 2024
++ May 28, 2024: Thomas Guinard talks about Jupiter Kernel Gateway
++ June 11, 2024: Rebecca Hyams demos Postman
++ June 25, 2024: Charles Brown-Roberts & Eddie Prieto introduce deployment of web apps (Flask, security, and more)
 
 Would like to suggest a worthy resource? See [contributing instructions](CONTRIBUTING.md).
 
