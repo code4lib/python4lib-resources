@@ -57,6 +57,7 @@ Would like to suggest a worthy resource? See [contributing instructions](CONTRIB
 ### Library metadata
 + [pybibframe](https://pypi.org/project/pybibframe/) - MARC/XML to RDF or Versa output converter
 + [pymarc](https://pymarc.readthedocs.io/en/latest/) - MARC parser
++ [marcgrep](https://github.com/phette23/marcgreppy) - CLI for searching MARC files
 
 #### ILS & other library systems wrappers
 + [almapipy](https://github.com/UCDavisLibrary/almapipy) - Alma API wrapper
